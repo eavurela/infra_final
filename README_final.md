@@ -790,6 +790,9 @@ Debe contener:
  Ejecutar el comando:
  
 	 docker run --name web-red-infra --ip 172.18.0.110 --network red_infra -v /share_volume/docker-web:/usr/share/nginx/html -d nginx
+https://hub.docker.com/_/nginx
+
+ #### 4.2.2 Contenedor apache2
 
  
 
@@ -892,9 +895,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQzMDUxOTgsODMzNzQ5NDQsLTk2MDkyMz
-AxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2Njk2
-NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MC
-wyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgz
-MzM3NDk1Nl19
+eyJoaXN0b3J5IjpbLTE0NDU0ODY0MDEsODMzNzQ5NDQsLTk2MD
+kyMzAxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2
+Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1ND
+Q4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwt
+MTgzMzM3NDk1Nl19
 -->
