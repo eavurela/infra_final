@@ -651,8 +651,7 @@ Como se puede ver por defecto nos genero una red de tipo bridge, podemos analiza
 			 } 
 	...
 
-Como se puede observar, la red bridge es un /16 con dirección de ip 172.17.0.0 en dónde el gateway es 172.17.0.1
-Podemos entonces, generar contenedores con direcciones entre   172.17.0.2 - 172.17.255.254.
+Como se puede observar, la red bridge es un /16 con dirección de ip 172.18.0.0, Podemos entonces, generar contenedores con direcciones entre   172.18.0.2 - 172.17.255.254.
 
 #### 3.2 Creación del contenedor balanceador. 
 En este punto tenemos por lo menos tres opciones para realizar. 
@@ -667,8 +666,8 @@ Primero debemos generar le archivo de configuración de Nginx.
 
 	root@web-server:/docker/red/balanceo# nano balanceo.conf
 	upstream backdocker { 
-	   server 172.17.0.100; 
-	   server 172.17.0.110; 
+	   server 172.18.0.100; 
+	   server 172.18.0.110; 
 	   # <ip_contenedor_web> 
 	} 
 	server { 
@@ -856,9 +855,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NDczOTQzMCw4MzM3NDk0NCwtOTYwOT
-IzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2
-OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0ND
-gwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0x
-ODMzMzc0OTU2XX0=
+eyJoaXN0b3J5IjpbNTYwNTA1NzY5LDgzMzc0OTQ0LC05NjA5Mj
+MwMTUsNjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5
+NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0OD
+AsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4
+MzMzNzQ5NTZdfQ==
 -->
