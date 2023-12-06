@@ -721,6 +721,8 @@ Verificamos la creación de la imagen:
 
 Ejecutar el contenedor: 
 
+		asd
+
 	docker run -d -p 8000:80 --name balanceador balanceo-nginx
 	ebd49374b88fe202965e524f085c88c244705df33ded2963a9c61a92288c4ff3
 	oot@web-server:/docker/red/balanceo# docker ps
@@ -728,7 +730,8 @@ Ejecutar el contenedor:
 	ebd49374b88f   balanceo-nginx   "/docker-entrypoint.…"   3 seconds ago   Up 2 seconds   0.0.0.0:8000->80/tcp, :::8000->80/tcp   balanceador
 
 #### 3.2.2 Montar un directorio local en la configuración de nginx, para que tome de forma dinámica los cambios. 
-En este caso ejecutaremos el contenedor, con la imagen nginx:alpine utilizando un "bi
+En este caso ejecutaremos el contenedor, con la imagen nginx:alpine utilizando un "bind mount". Se montará un directorio del host anfitrión en el contenedor. 
+docker run -d -p 8000:80 --name balanceador balanceo-nginx
 
 
 
@@ -832,7 +835,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjM0Njk2NjAsNjY2MjE3MzcsLTY4OT
+eyJoaXN0b3J5IjpbLTE2MjM0MDkzNzYsNjY2MjE3MzcsLTY4OT
 k3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNiwtNjQ2NDMyNzc4LC0x
 OTkyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMT
 YzMDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5NTZdfQ==
