@@ -789,7 +789,7 @@ Debe contener:
  #### 4.2.1 Contenedor nginx 
  Ejecutar el comando:
  
-	 docker run --name web-5 -p 8012:80 -v --ip 172.18.0.100 /share_volume/docker-web:/usr/share/nginx/html -d nginx
+	 docker run --name web-5 -p 8012:80 -v --ip 172.18.0.100 --network red_infra /share_volume/docker-web:/usr/share/nginx/html -d nginx
 
  
 
@@ -892,9 +892,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3OTc3MjQyLDgzMzc0OTQ0LC05NjA5Mj
-MwMTUsNjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5
-NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0OD
-AsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4
-MzMzNzQ5NTZdfQ==
+eyJoaXN0b3J5IjpbMTg0NDUzMzAwMiw4MzM3NDk0NCwtOTYwOT
+IzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2
+OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0ND
+gwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0x
+ODMzMzc0OTU2XX0=
 -->
