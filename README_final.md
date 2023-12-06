@@ -586,9 +586,12 @@ Se configura la red, el servicio sshfs, el hostname y el montaje automático.
 
 Para la instalación de Docker en ubuntu se debe ejecutar: 
 
-	apt install docker docker.io -y
+	root@web-server:~# apt install docker docker.io -y
 
+Para verificar que se haya instalado correctamente podemos utulizar el comando, nos listará los procesos de Docker corriendo en este caso ninguno. 
 
+	root@web-server:~# docker ps 
+	CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 
 
 
@@ -691,7 +694,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNT
-QwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3
-NDk1Nl19
+eyJoaXN0b3J5IjpbNDU0NjY1NTIwLC0xOTkyOTI5OTYyLDE1OT
+E4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3
+ODQsLTE4MzMzNzQ5NTZdfQ==
 -->
