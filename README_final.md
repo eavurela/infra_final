@@ -804,11 +804,11 @@ https://hub.docker.com/_/httpd
 
 Toda la configuración anterior de docker, puede ser generada en un solo archivo y ejecutada de una única vez. 
 
+Para la configuración mediante el compose se necesita: 
 
-
-
-
-
+ 1. Generar archivo docker-compose.yml
+ 2. Dentro del archivo configurar los servicios 
+ 3. Ejecutar el yml mediante el comando "docker-compose up -d" 
 
 ## Escalabilidad horizontal 
 
@@ -909,10 +909,10 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIxNDg2MjY5LDE3Nzg2NDkzMDUsMjA3ND
-k2MzgxLDE1MTg5NjQ5MzcsODMzNzQ5NDQsLTk2MDkyMzAxNSw2
-NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2Njk2NDI2LC
-02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQw
-OTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3ND
-k1Nl19
+eyJoaXN0b3J5IjpbMjAwNDg0NzUwMiwxNzc4NjQ5MzA1LDIwNz
+Q5NjM4MSwxNTE4OTY0OTM3LDgzMzc0OTQ0LC05NjA5MjMwMTUs
+NjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNi
+wtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0
+MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4MzMzNz
+Q5NTZdfQ==
 -->
