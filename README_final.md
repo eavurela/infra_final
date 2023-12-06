@@ -656,8 +656,12 @@ Podemos entonces, generar contenedores con direcciones entre   172.17.0.2 - 172.
 #### 3.2 Creación del contenedor balanceador. 
 En este punto tenemos por lo menos tres opciones para realizar. 
 
- 1. Generar una imagen de docker con nuestro archivo de configuración. 
- 2. Copiar la imagen de
+ 1. Generar una imagen del contenedor con nuestro archivo de configuración. 
+ 2. Copiar el archivo de configuración en el contenedor en el momento de ejecución del contenedor
+ 3. Montar un directorio local en la configuración de nginx, para que tome de forma dinámica los cambios. 
+
+##### 3.2.1 
+	
 
 ## Escalabilidad horizontal 
 
@@ -758,7 +762,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NTgxMDIyNCw3NDQ3MzQsLTkzNjY5Nj
+eyJoaXN0b3J5IjpbMTE5Njg5MzI0NCw3NDQ3MzQsLTkzNjY5Nj
 QyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0ODAs
 MjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4Mz
 MzNzQ5NTZdfQ==
