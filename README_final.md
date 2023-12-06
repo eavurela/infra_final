@@ -763,7 +763,13 @@ Debemos mapear el volumen que ya tenemos instalado, a los contenedores que ejecu
 Entonces: 
 
  1. Verificar volumen montado
- 2. Ejecutar contenedor nginx con IPs balanceadas por el contenedor de balanceo, considerando que el "DocumentRoot" debe corresponder a un "bind mount" del volu
+ 2. Ejecutar contenedor nginx o apache2 con IPs balanceadas por el contenedor de balanceo, considerando que el "DocumentRoot" debe corresponder a un "bind mount" del volumen del servidor SSHFS. 
+
+#### 4.1 Verificar volumen montado
+
+
+
+
 
 ## Escalabilidad horizontal 
 
@@ -864,9 +870,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNTkzNjI3MCw4MzM3NDk0NCwtOTYwOT
-IzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2
-OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0ND
-gwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0x
-ODMzMzc0OTU2XX0=
+eyJoaXN0b3J5IjpbOTE0ODA0ODEsODMzNzQ5NDQsLTk2MDkyMz
+AxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2Njk2
+NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MC
+wyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgz
+MzM3NDk1Nl19
 -->
