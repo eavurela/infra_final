@@ -586,7 +586,14 @@ Se configura la red, el servicio sshfs, el hostname y el montaje automático.
 	#Conexión al sshfs 
 	sshfs -o allow_other,default_permissions root@10.0.0.10:/opt/webserver  /share_volume 
 	echo "@reboot sleep 10 && sshfs root@10.0.0.10:/opt/webserver /share_volume" > /var/spool/cron/crontabs/root | chgrp crontab /var/spool/cron/crontabs/root
-	
+
+Agregado al script posterior. 
+
+		# instalación de docker # 
+		apt install docker docker.io -y 
+		# Instalacion de copose# 
+		curl -SL https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-linux-x86_64 -o /usr/bin/docker-compose 
+		chmod +x /usr/bin/docker-compose
 
 ### 1. Instalación de Docker
 
@@ -1080,11 +1087,11 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMTg5MzQxNSwxODI0MzU2ODM0LC0xOT
-Y4NTA4OTg3LC0zNzIxMjQwNjMsMTc3ODY0OTMwNSwyMDc0OTYz
-ODEsMTUxODk2NDkzNyw4MzM3NDk0NCwtOTYwOTIzMDE1LDY2Nj
-IxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2OTY0MjYsLTY0
-NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0NDgwLDI1NDA5Mj
-g1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0OTU2
-XX0=
+eyJoaXN0b3J5IjpbLTEwMTM5MTUxMTcsMTgyNDM1NjgzNCwtMT
+k2ODUwODk4NywtMzcyMTI0MDYzLDE3Nzg2NDkzMDUsMjA3NDk2
+MzgxLDE1MTg5NjQ5MzcsODMzNzQ5NDQsLTk2MDkyMzAxNSw2Nj
+YyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2Njk2NDI2LC02
+NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOT
+I4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1
+Nl19
 -->
