@@ -706,18 +706,22 @@ Luego debemos construir la imagen con el archivo de configuración. Posados en e
 	f9302969eafd: Pull complete
 	d7fb62c2e1cc: Pull complete
 	Digest: sha256:3923f8de8d2214b9490e68fd6ae63ea604deddd166df2755b788bef04848b9bc
-Status: Downloaded newer image for nginx:alpine
- ---> 01e5c69afaf6
-Step 2/2 : COPY balanceo.conf /etc/nginx/conf.d/balanceo.conf
- ---> c1eb12a07a57
-Successfully built c1eb12a07a57
-Successfully tagged balanceo-nginx:latest
+	Status: Downloaded newer image for nginx:alpine
+	 ---> 01e5c69afaf6
+	Step 2/2 : COPY balanceo.conf /etc/nginx/conf.d/balanceo.conf
+	 ---> c1eb12a07a57
+	Successfully built c1eb12a07a57
+	Successfully tagged balanceo-nginx:latest
 	
 Verificamos la creación de la imagen:
 
 	root@web-server:/docker/red/balanceo# docker images 
 	REPOSITORY       TAG       IMAGE ID       CREATED         SIZE 
 	balanceo-nginx   latest    c1eb12a07a57   7 seconds ago   42.6MB
+
+Ejecutar el contenedor: 
+
+docker run -d -p 8000:80 --name balanceador mi-imagen-nginx
 
 
 ## Escalabilidad horizontal 
@@ -819,8 +823,8 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NjAyNTk0MSwtNjg5OTc4MTI0LDc0ND
-czNCwtOTM2Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIs
-MTU5MTg1NDQ4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3Mz
-YzNjc4NCwtMTgzMzM3NDk1Nl19
+eyJoaXN0b3J5IjpbMTkzNDcxMzM5LC02ODk5NzgxMjQsNzQ0Nz
+M0LC05MzY2OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2Miwx
+NTkxODU0NDgwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNj
+M2Nzg0LC0xODMzMzc0OTU2XX0=
 -->
