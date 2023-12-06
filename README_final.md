@@ -815,8 +815,9 @@ Para la configuración mediante el compose se necesita:
 
 El siguiente archivo de configuración ha sido generado, con las mismas características del anterior proyecto, siguiendo la documentación:
 https://anderfernandez.com/blog/tutorial-docker-compose/#Networks-en-Docker-Compose
-https://sysadm.es/docker-container-misma-red/
-https://sysadm.es/docker-port-y-expose/
+https://sysadm.es/docker-container-misma-red/ 
+https://sysadm.es/docker-port-y-expose/ | expose / port 
+https://docs.docker.com/compose/compose-file/compose-file-v3/ | Docker Configs 
 
 	root@web-server:/docker/red/balanceo# nano docker-compose.yml
 
@@ -891,7 +892,7 @@ Tomando de referencia:
 **image**: Declara la imagen de docker-hub utilizada, en caso quiera usar una propia local debería ser "build"
 **restart**: en caso el contenedor se apague se detalla que se reinicie de forma automática. 
 **networks**: se define la red a utilizar, se usa la red "infra_compose" declarada para su creación en "networks" 
-**configs**
+**configs**: se declara un origen, en este caso el archivo del anfitirón que se busca para la configuración, y e
 
 	
 	
@@ -996,10 +997,10 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIwMjU2ODQ0LC0zNzIxMjQwNjMsMTc3OD
-Y0OTMwNSwyMDc0OTYzODEsMTUxODk2NDkzNyw4MzM3NDk0NCwt
-OTYwOTIzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC
-05MzY2OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkx
-ODU0NDgwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nz
-g0LC0xODMzMzc0OTU2XX0=
+eyJoaXN0b3J5IjpbLTc5NzMzNTA3MiwtMzcyMTI0MDYzLDE3Nz
+g2NDkzMDUsMjA3NDk2MzgxLDE1MTg5NjQ5MzcsODMzNzQ5NDQs
+LTk2MDkyMzAxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNC
+wtOTM2Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5
+MTg1NDQ4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNj
+c4NCwtMTgzMzM3NDk1Nl19
 -->
