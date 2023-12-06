@@ -571,7 +571,7 @@ Se configura la red, el servicio sshfs, el hostname y el montaje automático.
 	sshfs -o allow_other,default_permissions root@10.0.0.10:/opt/webserver  /share_volume 
 	echo "@reboot sleep 10 && sshfs root@10.0.0.10:/opt/webserver /share_volume" > /var/spool/cron/crontabs/root | chgrp crontab /var/spool/cron/crontabs/root
 
-
+Configuración 
 
 
 
@@ -674,7 +674,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkxNTI5NTAzLDE1OTE4NTQ0ODAsMjU0MD
+eyJoaXN0b3J5IjpbMjI1MzI5NTAwLDE1OTE4NTQ0ODAsMjU0MD
 kyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5
 NTZdfQ==
 -->
