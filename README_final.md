@@ -898,7 +898,9 @@ Tomando de referencia:
 **volumes**: bind mount mediante docker compose, se mapea un directorio del anfitrion a un directorio del contenedor. 
 En este caso se hace coincidir el volumen del sshfs con el directoryroot por defecto de nginx. 
 
+**Consideraciones**: 
 
+Llegado a este punto, el docker-compose.yml solo t
 
 	
 	
@@ -1003,10 +1005,10 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Njg1MDg5ODcsLTM3MjEyNDA2MywxNz
-c4NjQ5MzA1LDIwNzQ5NjM4MSwxNTE4OTY0OTM3LDgzMzc0OTQ0
-LC05NjA5MjMwMTUsNjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3Mz
-QsLTkzNjY5NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1
-OTE4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2Mz
-Y3ODQsLTE4MzMzNzQ5NTZdfQ==
+eyJoaXN0b3J5IjpbMTAxNzU1NjE0MywtMTk2ODUwODk4NywtMz
+cyMTI0MDYzLDE3Nzg2NDkzMDUsMjA3NDk2MzgxLDE1MTg5NjQ5
+MzcsODMzNzQ5NDQsLTk2MDkyMzAxNSw2NjYyMTczNywtNjg5OT
+c4MTI0LDc0NDczNCwtOTM2Njk2NDI2LC02NDY0MzI3NzgsLTE5
+OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOTI4NTQsLTM0ODExNj
+MwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1Nl19
 -->
