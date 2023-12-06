@@ -915,24 +915,24 @@ En una virtual nueva ejecuto
 root@web-server-final:~/infra_final/script#docker-compose up -d
 
 	[+] Running 3/9
-	 ⠴ web-app1 Pulling                                                                                                                                                                                                                    	 5.5s 	
-	 ⠼ web-app2 Pulling                                                                                                                                                                                                                    5.5s 
+	⠴ web-app1 Pulling                                                                                                                                                                                                                    	 5.5s 	
+	⠼ web-app2 Pulling                                                                                                                                                                                                                    5.5s 
 	⠼ balan_compo 6 layers [⣿⣿⣿⣿⠀⠀]    958B/958B    Pulling                                                                                                                                                                               5.5s 
-   ✔ 1207c741d8c9 Pull complete                                                                                                                                                                                                        1.0s 
-   ✔ a23d11eaa182 Download complete                                                                                                                                                                                                    1.0s 
-   ✔ 0341e0d720db Download complete                                                                                                                                                                                                    0.7s 
-   ⠼ 3dc25df9202e Downloading [==================================================>]     958B/958B                                                                                                                                      1.4s 
-   ⠼ c02db9c48356 Waiting                                                                                                                                                                                                              1.4s 
-   ⠼ 0f187c37abb8 Waiting                                                                                                                                                                                                              1.4s 
-[+] Running 4/9
- ⠦ web-app1 Pulling                                                                                                                                                                    5.6s 
- ⠴ web-app2 Pulling                                                                                                                                                                    5.6s 
- ⠴ balan_compo 6 layers [⣿⣿⣿⣿⠀⠀]      0B/0B      Pulling                                                                                                                               5.6s 
-   ✔ 1207c741d8c9 Pull complete                                                                                                                                                        1.0s 
-   ✔ a23d11eaa182 Pull complete                                                                                                                                                        1.0s 
-   ✔ 0341e0d720db Download complete                                                                                                                                                    0.7s 
-   ✔ 3dc25df9202e Download complete                                                                                                                                                    1.4s 
-   ⠴ c02db9c48356 Waiting                                                                                                                                                              1tmpfs                           96M  4,0K   96M   1% /run/user/0
+	  ✔ 1207c741d8c9 Pull complete                                                                                                                                                                                                       1.0s 
+	  ✔ a23d11eaa182 Download complete                                                                                                                                                                                                    1.0s 
+	  ✔ 0341e0d720db Download complete                                                                                                                                                                                                    0.7s 
+	  ⠼ 3dc25df9202e Downloading [==================================================>]     958B/958B                                                                                                                                      1.4s 
+	  ⠼ c02db9c48356 Waiting                                                                                                                                                                                                              1.4s 
+	  ⠼ 0f187c37abb8 Waiting                                                                                                                                                                                                              1.4s
+	  [+] Running 4/9
+	  ⠦ web-app1 Pulling                                                                                                                                                                    5.6s 
+	  ⠴ web-app2 Pulling                                                                                                                                                                    5.6s 
+	  ⠴ balan_compo 6 layers [⣿⣿⣿⣿⠀⠀]      0B/0B      Pulling                                                                                                                               5.6s 
+	  ✔ 1207c741d8c9 Pull complete                                                                                                                                                        1.0s 
+	  ✔ a23d11eaa182 Pull complete                                                                                                                                                        1.0s 
+	  ✔ 0341e0d720db Download complete                                                                                                                                                    0.7s 
+	  ✔ 3dc25df9202e Download complete                                                                                                                                                    1.4s 
+	  ⠴ c02db9c48356 Waiting                                                                                                                                                              1tmpfs                           96M  4,0K   96M   1% /run/user/0
 root@10.0.0.10:/opt/webserver  3,9G   88K  3,7G   1% /share_volume
 root@web-server-final:~/infra_final/script# ls
 docker-compose.yml  web-inicial.sh
@@ -1063,11 +1063,11 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDgyNzcwNDQsMTgyNDM1NjgzNCwtMT
-k2ODUwODk4NywtMzcyMTI0MDYzLDE3Nzg2NDkzMDUsMjA3NDk2
-MzgxLDE1MTg5NjQ5MzcsODMzNzQ5NDQsLTk2MDkyMzAxNSw2Nj
-YyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2Njk2NDI2LC02
-NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOT
-I4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1
-Nl19
+eyJoaXN0b3J5IjpbLTE3NTMxNTk4NiwxODI0MzU2ODM0LC0xOT
+Y4NTA4OTg3LC0zNzIxMjQwNjMsMTc3ODY0OTMwNSwyMDc0OTYz
+ODEsMTUxODk2NDkzNyw4MzM3NDk0NCwtOTYwOTIzMDE1LDY2Nj
+IxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2OTY0MjYsLTY0
+NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0NDgwLDI1NDA5Mj
+g1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0OTU2
+XX0=
 -->
