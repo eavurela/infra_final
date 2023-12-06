@@ -813,7 +813,7 @@ Para la configuración mediante el compose se necesita:
 
  1. Generar archivo docker-compose.yml
  2. Dentro del archivo configurar los servicios 
- 3. Ejecutar el yml mediante el comando "docker-compose up -d" 
+ 3. Configuración automática, ejecutar el yml.
  4. Luego verificar el funcionamiento. 
 
 ### 5.1 Generar el archivo docker-compose.yml
@@ -912,7 +912,7 @@ Llegado a este punto, el docker-compose.yml solo depende de.
 Por lo tanto, podemos cambiando esas únicas variables, levantar el mismo laboratorio con la ejecución de pocos comandos. 
 A ello! 
 
-### Configuración automática del laboratorio. 
+### 3.1 Configuración automática del laboratorio. 
 En una copia de la virtual de template ejecuto:
 
 	#git clone git@github.com:eavurela/infra_final.git
@@ -976,6 +976,7 @@ Luego ejecuto el compose
 	  ✔ Container script-web-app1-1     Started                                                                                                                                         0.0s
 	  ✔ Container script-web-app2-1     Started                                                                                                                                         0.0s
 
+### 4.1
 Como se puede ver el nombre del contenedor, se genera con el directorio-nombre_del_servicio.
 
 	root@web-server-final:~/infra_final/script# docker ps 
@@ -1059,11 +1060,11 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA0MjYwMDA4LDE4ODE3OTY4NDUsLTk5OT
-U1OTU3NiwxODI0MzU2ODM0LC0xOTY4NTA4OTg3LC0zNzIxMjQw
-NjMsMTc3ODY0OTMwNSwyMDc0OTYzODEsMTUxODk2NDkzNyw4Mz
-M3NDk0NCwtOTYwOTIzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQs
-NzQ0NzM0LC05MzY2OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOT
-k2MiwxNTkxODU0NDgwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5XX0=
+eyJoaXN0b3J5IjpbLTQ3NTA2MTAzMSw1MDQyNjAwMDgsMTg4MT
+c5Njg0NSwtOTk5NTU5NTc2LDE4MjQzNTY4MzQsLTE5Njg1MDg5
+ODcsLTM3MjEyNDA2MywxNzc4NjQ5MzA1LDIwNzQ5NjM4MSwxNT
+E4OTY0OTM3LDgzMzc0OTQ0LC05NjA5MjMwMTUsNjY2MjE3Mzcs
+LTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNiwtNjQ2NDMyNz
+c4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0MDkyODU0XX0=
 
 -->
