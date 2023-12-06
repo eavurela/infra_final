@@ -662,6 +662,10 @@ En este punto tenemos por lo menos tres opciones para realizar.
 
 #### 3.2.1 Generar una imagen del contenedor con nuestro archivo de configuración. 
 
+Primero debemos generar le archivo de configuración de nginx. 
+
+
+
 
 
 
@@ -764,8 +768,8 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5Nj
-QyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0ODAs
-MjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4Mz
-MzNzQ5NTZdfQ==
+eyJoaXN0b3J5IjpbLTI2NjcxMzgzNSwtNjg5OTc4MTI0LDc0ND
+czNCwtOTM2Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIs
+MTU5MTg1NDQ4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3Mz
+YzNjc4NCwtMTgzMzM3NDk1Nl19
 -->
