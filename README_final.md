@@ -657,8 +657,8 @@ Podemos entonces, generar contenedores con direcciones entre   172.17.0.2 - 172.
 En este punto tenemos por lo menos tres opciones para realizar. 
 
  1. Generar una imagen del contenedor con nuestro archivo de configuración. 
- 2. Copiar el archivo de configuración en el contenedor en el momento de ejecución del contenedor
- 3. Montar un directorio local en la configuración de nginx, para que tome de forma dinámica los cambios. 
+ 2. Montar un directorio local en la configuración de nginx, para que tome de forma dinámica los cambios. 
+ 3. Copiar el archivo de configuración con el contenedor en ejecución.
 
 #### 3.2.1 Generar una imagen del contenedor con nuestro archivo de configuración. 
 
@@ -727,7 +727,9 @@ Ejecutar el contenedor:
 	CONTAINER ID   IMAGE            COMMAND                  CREATED         STATUS         PORTS                                   NAMES 
 	ebd49374b88f   balanceo-nginx   "/docker-entrypoint.…"   3 seconds ago   Up 2 seconds   0.0.0.0:8000->80/tcp, :::8000->80/tcp   balanceador
 
-#### 3.2.2 Copiar el archivo de configuración en el contenedor en el momento de ejecución del contenedor
+#### 3.2.2 Montar un directorio local en la configuración de nginx, para que tome de forma dinámica los cambios. 
+En este caso ejecutaremos el contenedor, con la imagen nginx:alpine utilizando un "bi
+
 
 
 
@@ -830,8 +832,8 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3Mz
-QsLTkzNjY5NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1
-OTE4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2Mz
-Y3ODQsLTE4MzMzNzQ5NTZdfQ==
+eyJoaXN0b3J5IjpbLTE3MjM0Njk2NjAsNjY2MjE3MzcsLTY4OT
+k3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNiwtNjQ2NDMyNzc4LC0x
+OTkyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMT
+YzMDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5NTZdfQ==
 -->
