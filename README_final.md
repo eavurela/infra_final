@@ -217,7 +217,7 @@ Se debe generar un nuevo medio virtual
 
 	Archivo/Herramientas/Administrador de medios virtuales/
 
-![enter image description here](https://i.ibb.co/6r2zm4h/imagen-2023-12-06-185224436.png)
+![enter image description here](https://i.ibb.co/qr1PKxs/imagen-2023-12-06-185426206.png)
 
 Luego deberán seleccionar
 
@@ -1064,7 +1064,7 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzgwMzE5MiwtMTk0MDI1Mzk0OCwxMj
+eyJoaXN0b3J5IjpbLTMzNzQ3MTYzNCwtMTk0MDI1Mzk0OCwxMj
 c5ODA1OTMyLDM2OTE0ODA4MCw1MDQyNjAwMDgsMTg4MTc5Njg0
 NSwtOTk5NTU5NTc2LDE4MjQzNTY4MzQsLTE5Njg1MDg5ODcsLT
 M3MjEyNDA2MywxNzc4NjQ5MzA1LDIwNzQ5NjM4MSwxNTE4OTY0
