@@ -586,6 +586,7 @@ Se configura la red, el servicio sshfs, el hostname y el montaje automático.
 	#Conexión al sshfs 
 	sshfs -o allow_other,default_permissions root@10.0.0.10:/opt/webserver  /share_volume 
 	echo "@reboot sleep 10 && sshfs root@10.0.0.10:/opt/webserver /share_volume" > /var/spool/cron/crontabs/root | chgrp crontab /var/spool/cron/crontabs/root
+	
 
 ### 1. Instalación de Docker
 
@@ -914,6 +915,8 @@ En una copia de la virtual de template ejecuto:
 
 Luego ejecuto el script de instalación web y docker. 
 
+	root@web-server-final:~# bash infra_final/script/web-inicial.sh
+
 
 
 
@@ -1077,11 +1080,11 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMjQxMzI0LDE4MjQzNTY4MzQsLTE5Nj
-g1MDg5ODcsLTM3MjEyNDA2MywxNzc4NjQ5MzA1LDIwNzQ5NjM4
-MSwxNTE4OTY0OTM3LDgzMzc0OTQ0LC05NjA5MjMwMTUsNjY2Mj
-E3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNiwtNjQ2
-NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0MDkyOD
-U0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5NTZd
-fQ==
+eyJoaXN0b3J5IjpbMjEwMTg5MzQxNSwxODI0MzU2ODM0LC0xOT
+Y4NTA4OTg3LC0zNzIxMjQwNjMsMTc3ODY0OTMwNSwyMDc0OTYz
+ODEsMTUxODk2NDkzNyw4MzM3NDk0NCwtOTYwOTIzMDE1LDY2Nj
+IxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2OTY0MjYsLTY0
+NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0NDgwLDI1NDA5Mj
+g1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0OTU2
+XX0=
 -->
