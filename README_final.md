@@ -576,6 +576,7 @@ Se configura la red, el servicio sshfs, el hostname y el montaje automático.
 
 
 
+
 ## Escalabilidad horizontal 
 
 En el caso que dicha estructura necesite ser escalable de forma horizontal, se debería replicar el host identificado como **"Servidor Web"**. 
@@ -673,7 +674,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTM4MTkzMTUsMTU5MTg1NDQ4MCwyNT
-QwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3
-NDk1Nl19
+eyJoaXN0b3J5IjpbNTkxNTI5NTAzLDE1OTE4NTQ0ODAsMjU0MD
+kyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5
+NTZdfQ==
 -->
