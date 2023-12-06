@@ -683,9 +683,13 @@ Primero debemos generar le archivo de configuración de Nginx.
 Luego generaremos el Dockerfile, en dónde se detallan las instrucciones para la creación del a imagen. 
 
 	root@web-server:/docker/red/balanceo# nano Dockerfile
+	
+	FROM nginx:alpine
+	COPY balanceo.conf /etc/nginx/conf.d/balanceo.conf
 
+Luego debemos construir la imagen con el archivo de configuración. Posados en el mismo directorio que el Dockerfile ejecutamos: 
 
-
+	root@web-server:/docker/red/balanceo# docker build -t balanceo-nginx .
 
 
 ## Escalabilidad horizontal 
@@ -787,8 +791,8 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDc2MTI3NzAsLTY4OTk3ODEyNCw3ND
-Q3MzQsLTkzNjY5NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYy
-LDE1OTE4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5Nz
-M2MzY3ODQsLTE4MzMzNzQ5NTZdfQ==
+eyJoaXN0b3J5IjpbLTI1NTg3OTQwNiwtNjg5OTc4MTI0LDc0ND
+czNCwtOTM2Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIs
+MTU5MTg1NDQ4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3Mz
+YzNjc4NCwtMTgzMzM3NDk1Nl19
 -->
