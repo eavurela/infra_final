@@ -924,6 +924,10 @@ Luego ejecuto el script de instalación web y docker.
 
 	root@web-server-final:~# bash infra_final/script/web-inicial.sh
 
+Luego modifico docker_compose con la ruta del archivo de config nueva. 
+
+sed -i 's//root/infra_final/docker/balanceo.conf/g'
+
 
 
 
@@ -1087,11 +1091,11 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTM5MTUxMTcsMTgyNDM1NjgzNCwtMT
-k2ODUwODk4NywtMzcyMTI0MDYzLDE3Nzg2NDkzMDUsMjA3NDk2
-MzgxLDE1MTg5NjQ5MzcsODMzNzQ5NDQsLTk2MDkyMzAxNSw2Nj
-YyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2Njk2NDI2LC02
-NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOT
-I4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1
-Nl19
+eyJoaXN0b3J5IjpbOTQ5NjAxNzQyLDE4MjQzNTY4MzQsLTE5Nj
+g1MDg5ODcsLTM3MjEyNDA2MywxNzc4NjQ5MzA1LDIwNzQ5NjM4
+MSwxNTE4OTY0OTM3LDgzMzc0OTQ0LC05NjA5MjMwMTUsNjY2Mj
+E3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNiwtNjQ2
+NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0MDkyOD
+U0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5NTZd
+fQ==
 -->
