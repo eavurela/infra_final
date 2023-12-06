@@ -549,6 +549,15 @@ En el reinicio, se debería ejecutar solo el montaje, y considerando que en la p
 
 ## Configuración de servidor docker 
 
+Para la configuración del servidor docker se necesitará: 
+ 
+0. Configuracion del hostname
+1. Configuración de la red 
+2. Instalación de Docker e  Instalación de servicio sshfs 
+3. Montaje de volumen compartido del sitio web
+5. 
+6. Configuración de la unidad para el montaje automático 
+
 Considerando que el servidor Docker, expondrá servicios web y se conectará al almacenamiento compartido, parte de las configuraciones serán similares. 
 
 Se configura la red, el servicio sshfs, el hostname y el montaje automático. 
@@ -571,7 +580,7 @@ Se configura la red, el servicio sshfs, el hostname y el montaje automático.
 	sshfs -o allow_other,default_permissions root@10.0.0.10:/opt/webserver  /share_volume 
 	echo "@reboot sleep 10 && sshfs root@10.0.0.10:/opt/webserver /share_volume" > /var/spool/cron/crontabs/root | chgrp crontab /var/spool/cron/crontabs/root
 
-Configuración 
+### Instalación de 
 
 
 
@@ -674,7 +683,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI1MzI5NTAwLDE1OTE4NTQ0ODAsMjU0MD
+eyJoaXN0b3J5IjpbNDEyMDc4MDk5LDE1OTE4NTQ0ODAsMjU0MD
 kyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5
 NTZdfQ==
 -->
