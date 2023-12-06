@@ -356,8 +356,13 @@ Creamos sistema de archivos ext4 para la partición sdc1
 
 ### 4-5.b  Creación de partición, y Configuración de FS (versión acotada). 
 
-Para ahorrar pasos en el proceso, y evitar una shell interavtiva en la creación de particiones (agiliza el trabajo en scripts)
+Para ahorrar pasos en el proceso, y evitar una shell interavtiva en la creación de particiones (agiliza el trabajo en scripts), se puede instalar 'xfsprogs'
 
+	# apt update && apt install xfsprogs -y
+Formateo.
+
+	# mkfs.xfs /dev/sdb
+Con estos dos simples comandos, se puede generar lo mismo que en los pasos 4 y 5. 
 
 
 ### 6. Montaje de la unidad 
@@ -640,6 +645,6 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NTQyNDg5OSwtMTk3MzYzNjc4NCwtMT
+eyJoaXN0b3J5IjpbLTQxNDgxNjIxMSwtMTk3MzYzNjc4NCwtMT
 gzMzM3NDk1Nl19
 -->
