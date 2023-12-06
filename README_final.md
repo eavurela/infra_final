@@ -917,17 +917,14 @@ En una copia de la virtual de template ejecuto:
 
 	#git clone git@github.com:eavurela/infra_final.git
 
-https://github.com/eavurela/infra_final/blob/master/script/web-inicial.sh
 
 Luego ejecuto el script de instalación web y docker. 
 
 	root@web-server-final:~# bash infra_final/script/web-inicial.sh
 
-Luego modifico docker_compose con la ruta del archivo de config nueva. 
+( referencia: https://github.com/eavurela/infra_final/blob/master/script/web-inicial.sh )
 
-	root@web-server-final:~# sed -i 's/docker/red/balanceo/balanceo2.conf/root/infra_final/docker/balanceo.conf/g'  infra_final/script/docker-compose.yml
-
-Finalmente ejecuto el compose 
+Luego ejecuto el compose 
 
 	root@web-server-final:~# cd infra_final/script/
 	root@web-server-final:~/infra_final/script#docker-compose up -d
@@ -1062,7 +1059,7 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI1OTk0NDEyLDE4ODE3OTY4NDUsLTk5OT
+eyJoaXN0b3J5IjpbNTA0MjYwMDA4LDE4ODE3OTY4NDUsLTk5OT
 U1OTU3NiwxODI0MzU2ODM0LC0xOTY4NTA4OTg3LC0zNzIxMjQw
 NjMsMTc3ODY0OTMwNSwyMDc0OTYzODEsMTUxODk2NDkzNyw4Mz
 M3NDk0NCwtOTYwOTIzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQs
