@@ -551,9 +551,9 @@ En el reinicio, se debería ejecutar solo el montaje, y considerando que en la p
 
 Para la configuración del servidor docker se necesitará: 
  
-0. Configuracion del hostname
-1. Configuración de la red 
-2. Instalación de Docker e  Instalación de servicio sshfs 
+0. Configuracion del hostname, configuración de la red, instalación del servicio sshfs y configuración de la unidad para montaje automático. 
+1.  
+2. Instalación de Docker e
 3. Montaje de volumen compartido del sitio web
 5. 
 6. Configuración de la unidad para el montaje automático 
@@ -683,7 +683,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEyMDc4MDk5LDE1OTE4NTQ0ODAsMjU0MD
-kyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5
-NTZdfQ==
+eyJoaXN0b3J5IjpbLTMyODQxMzc2MiwxNTkxODU0NDgwLDI1ND
+A5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0
+OTU2XX0=
 -->
