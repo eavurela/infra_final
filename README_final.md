@@ -21,7 +21,7 @@ En la generación de este laboratorio se utilizará Ubuntu 20.04.6 LTS.
 		
 Se utlizarán servicios de nginx como servidor proxy y servidor web, apache2 como servidor web, y el protocolo sshfs para compartir archivos entre instancias. 
 Se generará una primera plantilla con configuraciones básicas, que será luego replicada.
-Luego se utilizará docker y docker compose en dónd
+Luego se utilizará docker y docker para generar un 
 
 
 # Configuración de red en Virtual Box 
@@ -1049,11 +1049,11 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzYwMzUxNzcsMTgyNDM1NjgzNCwtMT
-k2ODUwODk4NywtMzcyMTI0MDYzLDE3Nzg2NDkzMDUsMjA3NDk2
-MzgxLDE1MTg5NjQ5MzcsODMzNzQ5NDQsLTk2MDkyMzAxNSw2Nj
-YyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2Njk2NDI2LC02
-NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOT
-I4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1
-Nl19
+eyJoaXN0b3J5IjpbLTk5OTU1OTU3NiwxODI0MzU2ODM0LC0xOT
+Y4NTA4OTg3LC0zNzIxMjQwNjMsMTc3ODY0OTMwNSwyMDc0OTYz
+ODEsMTUxODk2NDkzNyw4MzM3NDk0NCwtOTYwOTIzMDE1LDY2Nj
+IxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2OTY0MjYsLTY0
+NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0NDgwLDI1NDA5Mj
+g1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0OTU2
+XX0=
 -->
