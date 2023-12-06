@@ -43,4 +43,4 @@ networks:
 
 configs:
   nginx_conf:
-    file: /docker/red/balanceo/balanceo2.conf
+    file: /root/infra_final/docker/balanceo.conf
