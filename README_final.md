@@ -635,33 +635,21 @@ Luego verificamos las redes existentes
 Como se puede ver por defecto nos genero una red de tipo bridge, podemos analizar sus configuraciones: 
 
 	docker network inspect red_infra
-	 { "Name": "red_infra", 
-	 "Id": "34b4c1670d1afc6586dbb43143444c13c392ac5bf4c7ec53c0e5461bff6c2e46", "Created": "2023-12-06T17:46:20.171468188Z", 
-
- "Scope": "local", 
-
- "Driver": "bridge", 
-
- "EnableIPv6": false, 
-
- "IPAM": { 
-
- "Driver": "default", 
-
- "Options": {}, 
-
- "Config": [ 
-
- { 
-
- "Subnet": "172.18.0.0/16" 
-
- } 
-
- ] 
-
- },
-	
+	...
+	 "Name": "red_infra", 
+	 "Id": "34b4c1670d1afc6586dbb43143444c13c392ac5bf4c7ec53c0e5461bff6c2e46", 
+	 "Created": "2023-12-06T17:46:20.171468188Z", 
+	 "Scope": "local", 
+	 "Driver": "bridge", 
+	 "EnableIPv6": false, 
+		 "IPAM": { 
+		 "Driver": "default", 
+		 "Options": {}, 
+		 "Config": [ 
+			 { 
+				 "Subnet": "172.18.0.0/16"
+			 } 
+	...
 
 Como se puede observar, la red bridge es un /16 con dirección de ip 172.17.0.0 en dónde el gateway es 172.17.0.1
 Podemos entonces, generar contenedores con direcciones entre   172.17.0.2 - 172.17.255.254.
@@ -868,7 +856,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MTA2NTQ5NSw4MzM3NDk0NCwtOTYwOT
+eyJoaXN0b3J5IjpbMTM0NDczOTQzMCw4MzM3NDk0NCwtOTYwOT
 IzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2
 OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0ND
 gwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0x
