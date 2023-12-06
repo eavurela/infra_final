@@ -900,7 +900,14 @@ En este caso se hace coincidir el volumen del sshfs con el directoryroot por def
 
 **Consideraciones**: 
 
-Llegado a este punto, el docker-compose.yml solo t
+Llegado a este punto, el docker-compose.yml solo depende de. 
+
+ - [ ] Path del montaje de volumen
+ - [ ] Localización del config_file
+
+Por lo tanto, podemos cambiando esas únicas variables, levantar el mismo laboratorio con la ejecución de pocos comandos. 
+A ello! 
+
 
 	
 	
@@ -1005,7 +1012,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNzU1NjE0MywtMTk2ODUwODk4NywtMz
+eyJoaXN0b3J5IjpbMTgyNDM1NjgzNCwtMTk2ODUwODk4NywtMz
 cyMTI0MDYzLDE3Nzg2NDkzMDUsMjA3NDk2MzgxLDE1MTg5NjQ5
 MzcsODMzNzQ5NDQsLTk2MDkyMzAxNSw2NjYyMTczNywtNjg5OT
 c4MTI0LDc0NDczNCwtOTM2Njk2NDI2LC02NDY0MzI3NzgsLTE5
