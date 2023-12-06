@@ -330,7 +330,8 @@ Guardamos y salimos
 	Calling ioctl() to re-read partition table. 
 	Syncing disks.
 
-### 4.b  Creación de partición, versión 
+### 4.b  Creación de partición, versión acotada. 
+
 
 ### 5. Configuración del sistema de archivos 
 
@@ -636,5 +637,6 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MjY3MDgxMSwtMTgzMzM3NDk1Nl19
+eyJoaXN0b3J5IjpbLTE5NzM2MzY3ODQsLTE4MzMzNzQ5NTZdfQ
+==
 -->
