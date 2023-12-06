@@ -785,20 +785,20 @@ Debe contener:
  4. bind mount del directorio /share_volume
  5. Nombre del contenedor
  
- #### 4.2.1 Contenedor nginx 
+ #### 4.2.1 Contenedor Nginx 
  Ejecutar el comando:
  
 	 docker run --name web-red-infra --ip 172.18.0.110 --network red_infra -v /share_volume/docker-web:/usr/share/nginx/html -d nginx
 https://hub.docker.com/_/nginx
 
- #### 4.2.2 Contenedor apache2
+ #### 4.2.2 Contenedor Apache2
  Ejecutar el comando:
 
 	docker run -it --name web-red-infra2 --ip 172.18.0.100 --network red_infra -v /share_volume/docker-web:/usr/local/apache2/htdocs/ -d httpd:2.4
 
 https://hub.docker.com/_/httpd
 
-Consideraciones: No tiene ningún sentido tener dos servicios web diferentes, dado que duplicamos el tamaño de almacenamiento en imágenes de docker. 
+**Consideraciones**: No tiene ningún sentido tener dos servicios web diferentes, dado que duplicamos el tamaño de almacenamiento en imágenes de docker. 
 
 
 
@@ -903,9 +903,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDYzNTMyMTksMTUxODk2NDkzNyw4Mz
-M3NDk0NCwtOTYwOTIzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQs
-NzQ0NzM0LC05MzY2OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOT
-k2MiwxNTkxODU0NDgwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0x
-OTczNjM2Nzg0LC0xODMzMzc0OTU2XX0=
+eyJoaXN0b3J5IjpbMjA3NDk2MzgxLDE1MTg5NjQ5MzcsODMzNz
+Q5NDQsLTk2MDkyMzAxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0
+NDczNCwtOTM2Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5Nj
+IsMTU5MTg1NDQ4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3
+MzYzNjc4NCwtMTgzMzM3NDk1Nl19
 -->
