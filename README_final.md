@@ -767,7 +767,16 @@ Entonces:
 
 #### 4.1 Verificar volumen montado
 
-
+	root@web-server:/# df -h 
+	Filesystem                     Size  Used Avail Use% Mounted on 
+	tmpfs                           96M  1,7M   95M   2% /run 
+	/dev/sda2                      9,8G  5,5G  3,9G  59% / 
+	tmpfs                          479M     0  479M   0% /dev/shm 
+	tmpfs                          5,0M     0  5,0M   0% /run/lock 
+	tmpfs                           96M  4,0K   96M   1% /run/user/0 
+	root@10.0.0.10:/opt/webserver  3,9G   88K  3,7G   1% /share_volume 
+	overlay                        9,8G  5,5G  3,9G  59%/var/lib/docker/overlay2/f47c7584a63304ffb26718f1b503bb3b5a3ff30d660dcc203a44cee86c44e126/merged 
+	..
 
 
 
@@ -870,9 +879,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE0ODA0ODEsODMzNzQ5NDQsLTk2MDkyMz
-AxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2Njk2
-NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MC
-wyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgz
-MzM3NDk1Nl19
+eyJoaXN0b3J5IjpbLTEwODY5MDgyMjgsODMzNzQ5NDQsLTk2MD
+kyMzAxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2
+Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1ND
+Q4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwt
+MTgzMzM3NDk1Nl19
 -->
