@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+    balan_compo:
+        image: 'nginx:stable-alpine3.17-slim'
+        restart: always
+        networks:
+            - infra_compose
+        configs:
+            - source: nginx_conf
+              target: /etc/nginx/conf.d/balanceo.conf
+        ports:
+            - 10000:80
+
+    web-app1:
+        image: 'nginx:stable-alpine3.17-slim'
+        restart: always
+        depends_on:
+            - balan_compo
+        volumes:
+            -  /share_volume/docker-web:/usr/share/nginx/html
+        networks:
+            - infra_compose
+        expose:
+            - 80
+
+    web-app2:
+        image: 'nginx:stable-alpine3.17-slim'
+        restart: always
+        depends_on:
+            - balan_compo
+        volumes:
+            - /share_volume/docker-web:/usr/share/nginx/html
+        networks:
+            - infra_compose
+        expose:
+            - 80
+
+
+networks:
+  infra_compose:
+    driver: bridge
+
+configs:
+  nginx_conf:
+    file: /docker/red/balanceo/balanceo2.conf
