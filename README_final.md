@@ -553,10 +553,12 @@ Para la configuración del servidor docker se necesitará:
  
 0. Configuracion del hostname, configuración de la red, instalación del servicio sshfs y configuración de la unidad para montaje automático. 
 1.  
-2. Instalación de Docker e
-3. Montaje de volumen compartido del sitio web
+2. Instalación de Docker 
+3. 
 5. 
-6. Configuración de la unidad para el montaje automático 
+6. 
+
+### 0. Configuraciones heredadas. 
 
 Considerando que el servidor Docker, expondrá servicios web y se conectará al almacenamiento compartido, parte de las configuraciones serán similares. 
 
@@ -683,7 +685,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyODQxMzc2MiwxNTkxODU0NDgwLDI1ND
+eyJoaXN0b3J5IjpbLTYyMTI3MjkwNywxNTkxODU0NDgwLDI1ND
 A5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0
 OTU2XX0=
 -->
