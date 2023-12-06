@@ -690,6 +690,34 @@ Luego generaremos el Dockerfile, en dónde se detallan las instrucciones para la
 Luego debemos construir la imagen con el archivo de configuración. Posados en el mismo directorio que el Dockerfile ejecutamos: 
 
 	root@web-server:/docker/red/balanceo# docker build -t balanceo-nginx .
+	DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+	Sending build context to Docker daemon  3.072kB
+	Step 1/2 : FROM nginx:alpine
+	alpine: Pulling from library/nginx
+	c926b61bad3b: Pull complete
+	eb2797aa8e79: Pull complete
+	47df6ca4b6bc: Pull complete
+	5ea1ba8ab969: Pull complete
+	6a4b140a5e7c: Pull complete
+	c99555e79d52: Pull complete
+	f9302969eafd: Pull complete
+	d7fb62c2e1cc: Pull complete
+	Digest: sha256:3923f8de8d2214b9490e68fd6ae63ea604deddd166df2755b788bef04848b9bc
+Status: Downloaded newer image for nginx:alpine
+ ---> 01e5c69afaf6
+Step 2/2 : COPY balanceo.conf /etc/nginx/conf.d/balanceo.conf
+ ---> c1eb12a07a57
+Successfully built c1eb12a07a57
+Successfully tagged balanceo-nginx:latest
+	
+Verificamos la creación de la imagen:
+
+	root@web-server:/docker/red/balanceo# docker images 
+	REPOSITORY       TAG       IMAGE ID       CREATED         SIZE 
+	balanceo-nginx   latest    c1eb12a07a57   7 seconds ago   42.6MB
 
 
 ## Escalabilidad horizontal 
@@ -791,7 +819,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NTg3OTQwNiwtNjg5OTc4MTI0LDc0ND
+eyJoaXN0b3J5IjpbLTk2NjAyNTk0MSwtNjg5OTc4MTI0LDc0ND
 czNCwtOTM2Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIs
 MTU5MTg1NDQ4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3Mz
 YzNjc4NCwtMTgzMzM3NDk1Nl19
