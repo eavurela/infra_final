@@ -24,7 +24,7 @@ Se generará una primera plantilla con configuraciones básicas, que será luego
 Luego se utilizará docker y docker-compose para generar un balanceo web mediante la automatización de contenedores y repositorios.
 
  
-
+![enter image description here](https://i.ibb.co/ynYnkc6/imagen-2023-10-29-171202377.png)
  
  
 
@@ -217,7 +217,7 @@ Se debe generar un nuevo medio virtual
 
 	Archivo/Herramientas/Administrador de medios virtuales/
 
-![enter image description here](https://i.ibb.co/ynYnkc6/imagen-2023-10-29-171202377.png)
+![enter image description here](https://i.ibb.co/jLdQP0d/diagrama.png)
 
 Luego deberán seleccionar
 
@@ -1064,11 +1064,11 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE3OTMzNDMyLDEyNzk4MDU5MzIsMzY5MT
-Q4MDgwLDUwNDI2MDAwOCwxODgxNzk2ODQ1LC05OTk1NTk1NzYs
-MTgyNDM1NjgzNCwtMTk2ODUwODk4NywtMzcyMTI0MDYzLDE3Nz
-g2NDkzMDUsMjA3NDk2MzgxLDE1MTg5NjQ5MzcsODMzNzQ5NDQs
-LTk2MDkyMzAxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNC
-wtOTM2Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjJdfQ==
+eyJoaXN0b3J5IjpbLTE5NDAyNTM5NDgsMTI3OTgwNTkzMiwzNj
+kxNDgwODAsNTA0MjYwMDA4LDE4ODE3OTY4NDUsLTk5OTU1OTU3
+NiwxODI0MzU2ODM0LC0xOTY4NTA4OTg3LC0zNzIxMjQwNjMsMT
+c3ODY0OTMwNSwyMDc0OTYzODEsMTUxODk2NDkzNyw4MzM3NDk0
+NCwtOTYwOTIzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0Nz
+M0LC05MzY2OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2Ml19
 
 -->
