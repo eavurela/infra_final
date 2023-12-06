@@ -3,21 +3,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 
-
-Web Server
-
-Instalación de docker, en la máquina de servidor web
-
-	apt update && apt install docker docker.io
-
-Instalación de docker compose:
-
-
-	curl -SL https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
-	chmod +x /usr/bin/docker-compose
-
-docker pull wordpress:4.6.1-php7.0
-
 ISTEA
 Edgardo Vurela
 Infraestructura de Servidores
@@ -561,7 +546,7 @@ Para la configuración del servidor docker se necesitará:
 		-	3.2.2 Montar un directorio local en la configuración de nginx, para que tome de forma dinámica los cambios. 
 		-	3.2.3  Copiar el archivo de configuración con el contenedor en ejecución
 4. Configuración de contenedor web-server
-5. 
+
 
 ### 0. Configuraciones heredadas. 
 
@@ -1063,11 +1048,11 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYwNDMzNzA3LDE4MjQzNTY4MzQsLTE5Nj
-g1MDg5ODcsLTM3MjEyNDA2MywxNzc4NjQ5MzA1LDIwNzQ5NjM4
-MSwxNTE4OTY0OTM3LDgzMzc0OTQ0LC05NjA5MjMwMTUsNjY2Mj
-E3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNiwtNjQ2
-NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0MDkyOD
-U0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5NTZd
-fQ==
+eyJoaXN0b3J5IjpbLTE2MDY5NDcwNDcsMTgyNDM1NjgzNCwtMT
+k2ODUwODk4NywtMzcyMTI0MDYzLDE3Nzg2NDkzMDUsMjA3NDk2
+MzgxLDE1MTg5NjQ5MzcsODMzNzQ5NDQsLTk2MDkyMzAxNSw2Nj
+YyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2Njk2NDI2LC02
+NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOT
+I4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1
+Nl19
 -->
