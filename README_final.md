@@ -738,7 +738,7 @@ En este caso ejecutaremos el contenedor, con la imagen nginx:alpine utilizando u
 
 	docker -v (mapeo de directorios)<directorio_anfitrion>:<directorio_contenedor>
 	
-	docker run -d -p 8000:80 --name balanceador -v   balanceo-nginx
+	docker run -d -p 8000:80 --name balanceador -v /docker/red/balanceo/balanceo.conf:/etc/nginx/conf.d/balanceo.conf nginx:alpine
 
 
 
@@ -842,7 +842,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4OTIxMjgwMCw2NjYyMTczNywtNjg5OT
+eyJoaXN0b3J5IjpbLTk2MDkyMzAxNSw2NjYyMTczNywtNjg5OT
 c4MTI0LDc0NDczNCwtOTM2Njk2NDI2LC02NDY0MzI3NzgsLTE5
 OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOTI4NTQsLTM0ODExNj
 MwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1Nl19
