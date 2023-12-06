@@ -727,7 +727,7 @@ Ejecutar el contenedor:
 		   --name <nombre del contenedor (opcional)>
 		   nombre de la imagen
 
-	docker run -d -p 8000:80 --name balanceador balanceo-nginx
+	docker run -d -p 8000:80 --ip 172.18.0.100 --network red_infra --name balanceador balanceo-nginx
 	ebd49374b88fe202965e524f085c88c244705df33ded2963a9c61a92288c4ff3
 	oot@web-server:/docker/red/balanceo# docker ps
 	CONTAINER ID   IMAGE            COMMAND                  CREATED         STATUS         PORTS                                   NAMES 
@@ -738,18 +738,19 @@ En este caso ejecutaremos el contenedor, con la imagen nginx:alpine utilizando u
 
 	docker -v (mapeo de directorios)<directorio_anfitrion>:<directorio_contenedor>
 	
-	docker run -d -p 8000:80 --name balanceador -v /docker/red/balanceo/balanceo.conf:/etc/nginx/conf.d/balanceo.conf nginx:alpine
+	docker run -d -p 8000:80 --ip 172.18.0.100 --network red_infra --name balanceador -v /docker/red/balanceo/balanceo.conf:/etc/nginx/conf.d/balanceo.conf nginx:alpine
 
 #### 3.2.3 Copiar el archivo de configuración con el contenedor en ejecución
 Activo un nginx:alpine con la configuración de nginx por defecto. 
 
-	docker run -d -p 4000:80 --name balanceador-copy nginx:alpine
+	docker run -d -p 4000:80 --ip 172.18.0.100 --network red_infra  --name balanceador-copy nginx:alpine
 
 	docker cp balanceo.conf balanceador-copy:/etc/nginx/conf.d/ 
 	Successfully copied 2.05kB to balanceador-copy:/etc/nginx/conf.d/
 Ahora para que aplique la configuración debemos reiniciar el contenedor.
 
 	docker restart balanceador-copy
+
 
 
 
@@ -855,7 +856,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYwNTA1NzY5LDgzMzc0OTQ0LC05NjA5Mj
+eyJoaXN0b3J5IjpbNzM4Mzc1MDgyLDgzMzc0OTQ0LC05NjA5Mj
 MwMTUsNjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5
 NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0OD
 AsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4
