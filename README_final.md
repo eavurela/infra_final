@@ -24,8 +24,7 @@ Se generará una primera plantilla con configuraciones básicas, que será luego
 Luego se utilizará docker y docker-compose para generar un balanceo web mediante la automatización de contenedores y repositorios.
 
 
-![Diagrama de arquitectura 
-](https://photos.app.goo.gl/4DCjBjwvDtn8ZcLM8)
+
  
 
 
@@ -1064,11 +1063,11 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAyMzI3MzM5LDM2OTE0ODA4MCw1MDQyNj
-AwMDgsMTg4MTc5Njg0NSwtOTk5NTU5NTc2LDE4MjQzNTY4MzQs
-LTE5Njg1MDg5ODcsLTM3MjEyNDA2MywxNzc4NjQ5MzA1LDIwNz
-Q5NjM4MSwxNTE4OTY0OTM3LDgzMzc0OTQ0LC05NjA5MjMwMTUs
-NjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNi
-wtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0ODBdfQ==
+eyJoaXN0b3J5IjpbMTA3NjIzOTg3NCwzNjkxNDgwODAsNTA0Mj
+YwMDA4LDE4ODE3OTY4NDUsLTk5OTU1OTU3NiwxODI0MzU2ODM0
+LC0xOTY4NTA4OTg3LC0zNzIxMjQwNjMsMTc3ODY0OTMwNSwyMD
+c0OTYzODEsMTUxODk2NDkzNyw4MzM3NDk0NCwtOTYwOTIzMDE1
+LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2OTY0Mj
+YsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0NDgwXX0=
 
 -->
