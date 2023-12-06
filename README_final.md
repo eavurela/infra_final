@@ -619,7 +619,11 @@ Con se vio anteriormente debemos dentro del archivo de configuración de nginx, 
 
 #### 3.1 Configurar detalles de la red de docker 
 
-Podemos configurar la red y luego utilizar la red creada para generar 
+Podemos configurar la red y luego en la red creada agregar los nuevos contenedores. Para crear la red ejecutamos lo siguiente: 
+	
+	docker network create --subnet=172.18.0.0/16 red_infra
+	
+Luego verificamos las redes existentes
 
 	root@web-server:~# docker network ls 
 	NETWORK ID     NAME      DRIVER    SCOPE 
@@ -627,6 +631,8 @@ Podemos configurar la red y luego utilizar la red creada para generar
 	1321da81e196   host      host      local 
 	4ba1b3e7c2e6   none      null      local
 	34b4c1670d1a   red_infra   bridge    local
+
+Como se puede ver por defecto nos genero una red de tipo bridge
 	
 
 Como se puede observar, la red bridge es un /16 con dirección de ip 172.17.0.0 en dónde el gateway es 172.17.0.1
@@ -834,7 +840,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMzA2NTEyMCw4MzM3NDk0NCwtOTYwOT
+eyJoaXN0b3J5IjpbLTQ0NTE2MzQ3NCw4MzM3NDk0NCwtOTYwOT
 IzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2
 OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0ND
 gwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0x
