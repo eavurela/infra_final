@@ -811,7 +811,54 @@ Para la configuración mediante el compose se necesita:
  3. Ejecutar el yml mediante el comando "docker-compose up -d" 
  4. Luego verificar el funcionamiento. 
 
-### 5.1 
+### 5.1 Generar archivo docker-compose.yml
+
+	version: '3'
+
+	services:
+    balan_compo:
+        image: 'nginx:stable-alpine3.17-slim'
+        restart: always
+        networks:
+            - infra_compose
+        configs:
+            - source: nginx_conf
+              target: /etc/nginx/conf.d/balanceo.conf
+        ports:
+            - 10000:80
+
+    web-app1:
+        image: 'nginx:stable-alpine3.17-slim'
+        restart: always
+        depends_on:
+            - balan_compo
+        volumes:
+            -  /share_volume/docker-web:/usr/share/nginx/html
+        networks:
+            - infra_compose
+        expose:
+            - 80
+
+    web-app2:
+        image: 'nginx:stable-alpine3.17-slim'
+        restart: always
+        depends_on:
+            - balan_compo
+        volumes:
+            - /share_volume/docker-web:/usr/share/nginx/html
+        networks:
+            - infra_compose
+        expose:
+            - 80
+
+
+	networks:
+	  infra_compose:
+	    driver: bridge
+
+	configs:
+	  nginx_conf:
+	    file: /docker/red/balanceo/balanceo2.conf
 
 
 ## Escalabilidad horizontal 
@@ -913,7 +960,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NDc3ODA2NywxNzc4NjQ5MzA1LDIwNz
+eyJoaXN0b3J5IjpbLTM3MjEyNDA2MywxNzc4NjQ5MzA1LDIwNz
 Q5NjM4MSwxNTE4OTY0OTM3LDgzMzc0OTQ0LC05NjA5MjMwMTUs
 NjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNi
 wtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0
