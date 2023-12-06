@@ -614,6 +614,8 @@ Probar el funcionamiento
 
 ### 3. Configuración de balanceo
 
+Para la configuración del balanceo dentro de docker, necesitaremos 
+
 
 
 
@@ -716,7 +718,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NzkzODA2NywtNjQ2NDMyNzc4LC0xOT
-kyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMTYz
-MDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5NTZdfQ==
+eyJoaXN0b3J5IjpbNTY1OTc1OTg0LC02NDY0MzI3NzgsLTE5OT
+I5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOTI4NTQsLTM0ODExNjMw
+OSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1Nl19
 -->
