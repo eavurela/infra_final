@@ -894,7 +894,9 @@ Tomando de referencia:
 **networks**: se define la red a utilizar, se usa la red "infra_compose" declarada para su creación en "networks" 
 **configs**: se declara un origen, en este caso el archivo del anfitirón que se busca para la configuración, y un target o destino, que es el archivo que debe generar en el contenedor. 
 **ports**: mapeo de puertos entre anfitrión y contenedor, se configura <puerto_anfitrion>:<puerto_contenedor>
-**expose**: utilizado en lo
+**expose**: utilizado en los web-servers declara que se exponga el puerto 80, puerto de escucha de Nginx. pero no necesita ser mapeado externamente, dado que será consultado por el balanceador.  
+**volumes**: bind mount mediante docker compose, se mapea un directorio del anfitrion a un directorio del contenedor. 
+En este caso se h
 
 	
 	
@@ -999,10 +1001,10 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTM4Nzc5MDksLTM3MjEyNDA2MywxNz
-c4NjQ5MzA1LDIwNzQ5NjM4MSwxNTE4OTY0OTM3LDgzMzc0OTQ0
-LC05NjA5MjMwMTUsNjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3Mz
-QsLTkzNjY5NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1
-OTE4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2Mz
-Y3ODQsLTE4MzMzNzQ5NTZdfQ==
+eyJoaXN0b3J5IjpbNDI5Njc2ODUxLC0zNzIxMjQwNjMsMTc3OD
+Y0OTMwNSwyMDc0OTYzODEsMTUxODk2NDkzNyw4MzM3NDk0NCwt
+OTYwOTIzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC
+05MzY2OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkx
+ODU0NDgwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nz
+g0LC0xODMzMzc0OTU2XX0=
 -->
