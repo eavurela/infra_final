@@ -612,6 +612,8 @@ Probar el funcionamiento
 
 	root@web-server:~# docker-compose version
 
+### 3. Configuración de balanceo
+
 
 
 
@@ -674,6 +676,8 @@ IPTABLES -      https://serverfault.com/questions/233427/iptables-forwarding-mas
 HOSTNAME - https://www.hostinger.com.ar/tutoriales/como-cambiar-hostname-ubuntu
 RED -               https://www.solvetic.com/tutoriales/article/10984-configurar-ip-estatica-en-ubuntu-server-22-04/	
 PROXY -           https://kinsta.com/es/blog/proxy-inverso/
+DockerNgix     https://hub.docker.com/_/nginx
+
 
 
 
@@ -712,7 +716,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNT
-kxODU0NDgwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2
-Nzg0LC0xODMzMzc0OTU2XX0=
+eyJoaXN0b3J5IjpbMTA4NzkzODA2NywtNjQ2NDMyNzc4LC0xOT
+kyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMTYz
+MDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5NTZdfQ==
 -->
