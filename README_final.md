@@ -908,7 +908,13 @@ Llegado a este punto, el docker-compose.yml solo depende de.
 Por lo tanto, podemos cambiando esas únicas variables, levantar el mismo laboratorio con la ejecución de pocos comandos. 
 A ello! 
 
-En una virtual nueva ejecuto:
+En una copia de la virtual de template ejecuto:
+
+	#git clone git@github.com:eavurela/infra_final.git
+
+Luego ejecuto el script de instalación web y docker. 
+
+
 
 
 
@@ -1071,11 +1077,11 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMjM4NzQ4NywxODI0MzU2ODM0LC0xOT
-Y4NTA4OTg3LC0zNzIxMjQwNjMsMTc3ODY0OTMwNSwyMDc0OTYz
-ODEsMTUxODk2NDkzNyw4MzM3NDk0NCwtOTYwOTIzMDE1LDY2Nj
-IxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2OTY0MjYsLTY0
-NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0NDgwLDI1NDA5Mj
-g1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0OTU2
-XX0=
+eyJoaXN0b3J5IjpbMTkxMjQxMzI0LDE4MjQzNTY4MzQsLTE5Nj
+g1MDg5ODcsLTM3MjEyNDA2MywxNzc4NjQ5MzA1LDIwNzQ5NjM4
+MSwxNTE4OTY0OTM3LDgzMzc0OTQ0LC05NjA5MjMwMTUsNjY2Mj
+E3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNiwtNjQ2
+NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0MDkyOD
+U0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5NTZd
+fQ==
 -->
