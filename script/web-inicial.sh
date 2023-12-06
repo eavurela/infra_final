@@ -14,3 +14,9 @@ mkdir -p /share_volume
 #Conexión al sshfs
 sshfs -o allow_other,default_permissions root@10.0.0.10:/opt/webserver  /share_volume
 echo "@reboot sleep 10 && sshfs root@10.0.0.10:/opt/webserver /share_volume" > /var/spool/cron/crontabs/root | chgrp crontab /var/spool/cron/crontabs/root
+# instalación de docker #
+apt install docker docker.io -y
+# Instalacion de copose#
+curl -SL https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
+chmod +x /usr/bin/docker-compose
+
