@@ -892,7 +892,9 @@ Tomando de referencia:
 **image**: Declara la imagen de docker-hub utilizada, en caso quiera usar una propia local debería ser "build"
 **restart**: en caso el contenedor se apague se detalla que se reinicie de forma automática. 
 **networks**: se define la red a utilizar, se usa la red "infra_compose" declarada para su creación en "networks" 
-**configs**: se declara un origen, en este caso el archivo del anfitirón que se busca para la configuración, y e
+**configs**: se declara un origen, en este caso el archivo del anfitirón que se busca para la configuración, y un target o destino, que es el archivo que debe generar en el contenedor. 
+**ports**: mapeo de puertos entre anfitrión y contenedor, se configura <puerto_anfitrion>:<puerto_contenedor>
+**expose**: utilizado en lo
 
 	
 	
@@ -997,10 +999,10 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NzMzNTA3MiwtMzcyMTI0MDYzLDE3Nz
-g2NDkzMDUsMjA3NDk2MzgxLDE1MTg5NjQ5MzcsODMzNzQ5NDQs
-LTk2MDkyMzAxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNC
-wtOTM2Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5
-MTg1NDQ4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNj
-c4NCwtMTgzMzM3NDk1Nl19
+eyJoaXN0b3J5IjpbLTE5MTM4Nzc5MDksLTM3MjEyNDA2MywxNz
+c4NjQ5MzA1LDIwNzQ5NjM4MSwxNTE4OTY0OTM3LDgzMzc0OTQ0
+LC05NjA5MjMwMTUsNjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3Mz
+QsLTkzNjY5NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1
+OTE4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2Mz
+Y3ODQsLTE4MzMzNzQ5NTZdfQ==
 -->
