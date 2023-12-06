@@ -554,6 +554,7 @@ Considerando que el servidor Docker, expondrá servicios web y se conectará al 
 
 
 
+
 ## Escalabilidad horizontal 
 
 En el caso que dicha estructura necesite ser escalable de forma horizontal, se debería replicar el host identificado como **"Servidor Web"**. 
@@ -651,6 +652,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MTg1NDQ4MCwyNTQwOTI4NTQsLTM0OD
-ExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1Nl19
+eyJoaXN0b3J5IjpbLTI4NzYzNTU1MCwxNTkxODU0NDgwLDI1ND
+A5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0
+OTU2XX0=
 -->
