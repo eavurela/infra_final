@@ -95,7 +95,7 @@ En esta etapa se generarán las conexiones para:
 
 Copiar el archivo de configuración de proxy descargado y pegarlo en el archivo .yaml 
 
-	root@servidor-proxy:/# cp /infra_final/proxy.conf /etc/netplan/00-installer-config.yaml
+	root@servidor-proxy:/# cp /infra_final/red/proxy.conf /etc/netplan/00-installer-config.yaml
 
 Aplicar la configuración de red. 
 
@@ -160,7 +160,7 @@ En la siguiente configuración se puede ver que las consultas al puerto 80 http 
 		
 		upstream backend { 
 			server 10.0.0.20;
-			server 10.0.0.21:8000;
+			server 10.0.0.21:10000;
 		## <nombre><ip-del-servidor-web-interno>;	 
 		} 
 		server { 
@@ -229,7 +229,7 @@ Ingreso al sistema con usuario y contraseña generados en la instalación del a 
 Copiar archivo de configuración de red para el sevidor de almacenamiento. 
 
 		$ sudo su 
-		# cp /infra_final/sshfs.conf /etc/netplan/00-installer-config.yaml
+		# cp /infra_final/red/sshfs.conf /etc/netplan/00-installer-config.yaml
 
 #### Detalle de configuración de red. 
 
@@ -438,7 +438,7 @@ Ingreso al sistema con usuario y contraseña generados en la instalación del a 
 Copiar archivo de configuración de red para el sevidor web. 
 
 		$ sudo su 
-		root@web-server:~# cp /infra_final/web.conf /etc/netplan/00-installer-config.yaml
+		root@web-server:~# cp /infra_final/red/web.conf /etc/netplan/00-installer-config.yaml
 		
 #### Detalle de configuración de red. 
 
@@ -1060,11 +1060,11 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4NjA4Mjg2MCwtOTk5NTU5NTc2LDE4Mj
-QzNTY4MzQsLTE5Njg1MDg5ODcsLTM3MjEyNDA2MywxNzc4NjQ5
-MzA1LDIwNzQ5NjM4MSwxNTE4OTY0OTM3LDgzMzc0OTQ0LC05Nj
-A5MjMwMTUsNjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkz
-NjY5NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NT
-Q0ODAsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODRd
-fQ==
+eyJoaXN0b3J5IjpbLTE3MzQzNjE4NDUsLTk5OTU1OTU3NiwxOD
+I0MzU2ODM0LC0xOTY4NTA4OTg3LC0zNzIxMjQwNjMsMTc3ODY0
+OTMwNSwyMDc0OTYzODEsMTUxODk2NDkzNyw4MzM3NDk0NCwtOT
+YwOTIzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05
+MzY2OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxOD
+U0NDgwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0
+XX0=
 -->
