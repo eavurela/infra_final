@@ -555,13 +555,12 @@ Para la configuración del servidor docker se necesitará:
 1. Instalación de Docker 
 2. Instalación de Docker Composer
 3. Configuración de balanceo
-	3.1 Configurar detalles de la red de docker 
+	-	3.1 Configurar detalles de la red de docker 
 	3.2 Creación del contenedor balanceador. 
 		-	3.2.1 Generar una imagen del contenedor con nuestro archivo de configuración. 
-				3.2.2 Montar un directorio local en la configuración de nginx, para que tome de forma dinámica los cambios. 
-		-	
-	
-4. 
+		-	3.2.2 Montar un directorio local en la configuración de nginx, para que tome de forma dinámica los cambios. 
+		-	3.2.3  Copiar el archivo de configuración con el contenedor en ejecución
+4. Configuración de contenedor web-server
 5. 
 
 ### 0. Configuraciones heredadas. 
@@ -756,6 +755,9 @@ Activo un nginx:alpine con la configuración de nginx por defecto.
 Ahora para que aplique la configuración debemos reiniciar el contenedor.
 
 	docker restart balanceador-copy
+	
+### 4. Configuración de contenedor web-server
+
 
 
 
@@ -862,9 +864,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjIyMzAxODcsODMzNzQ5NDQsLTk2MD
-kyMzAxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2
-Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1ND
-Q4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwt
-MTgzMzM3NDk1Nl19
+eyJoaXN0b3J5IjpbMTAwNjk2NDEyMyw4MzM3NDk0NCwtOTYwOT
+IzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2
+OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0ND
+gwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0x
+ODMzMzc0OTU2XX0=
 -->
