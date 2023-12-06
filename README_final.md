@@ -800,7 +800,7 @@ https://hub.docker.com/_/httpd
 
 **Consideraciones**: No tiene ningún sentido tener dos servicios web diferentes, dado que duplicamos el tamaño de almacenamiento en imágenes de docker. 
 
-## Utilización de Docker compose
+## 5. Utilización de Docker compose
 
 Toda la configuración anterior de docker, puede ser generada en un solo archivo y ejecutada de una única vez. 
 
@@ -809,6 +809,10 @@ Para la configuración mediante el compose se necesita:
  1. Generar archivo docker-compose.yml
  2. Dentro del archivo configurar los servicios 
  3. Ejecutar el yml mediante el comando "docker-compose up -d" 
+ 4. Luego verificar el funcionamiento. 
+
+### 5.1 
+
 
 ## Escalabilidad horizontal 
 
@@ -909,7 +913,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNDg0NzUwMiwxNzc4NjQ5MzA1LDIwNz
+eyJoaXN0b3J5IjpbMTQ1NDc3ODA2NywxNzc4NjQ5MzA1LDIwNz
 Q5NjM4MSwxNTE4OTY0OTM3LDgzMzc0OTQ0LC05NjA5MjMwMTUs
 NjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNi
 wtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0
