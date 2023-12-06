@@ -656,7 +656,7 @@ Como se puede ver por defecto nos genero una red de tipo bridge, podemos analiza
 			 } 
 	...
 
-Como se puede observar, la red bridge es un /16 con dirección de ip 172.18.0.0, Podemos entonces, generar contenedores con direcciones entre   172.18.0.2 - 172.17.255.254.
+Como se puede observar, la red bridge es un /16 con dirección de ip 172.18.0.0, Podemos entonces, generar contenedores con direcciones entre   172.18.0.2 - 172.18.255.254.
 
 #### 3.2 Creación del contenedor balanceador. 
 En este punto tenemos por lo menos tres opciones para realizar. 
@@ -781,7 +781,9 @@ Entonces:
 Debe contener: 
 	
 
- 1. IP dentro del rango 172.18.0.2 - 172..
+ 1. IP estática, configurada en el balanceo.conf
+ 2. network infra-red
+ 3. 
 
 ## Escalabilidad horizontal 
 
@@ -882,9 +884,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3Njg5MDcwOCw4MzM3NDk0NCwtOTYwOT
-IzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2
-OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0ND
-gwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0x
-ODMzMzc0OTU2XX0=
+eyJoaXN0b3J5IjpbLTEwNjA0MTkyNjIsODMzNzQ5NDQsLTk2MD
+kyMzAxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2
+Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1ND
+Q4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwt
+MTgzMzM3NDk1Nl19
 -->
