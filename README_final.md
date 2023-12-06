@@ -802,6 +802,10 @@ https://hub.docker.com/_/httpd
 
 ## Utilización de Docker compose
 
+Toda la configuración anterior de docker, puede ser generada en un solo archivo y ejecutada de una única vez. 
+
+
+
 
 
 
@@ -905,9 +909,10 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3ODY0OTMwNSwyMDc0OTYzODEsMTUxOD
-k2NDkzNyw4MzM3NDk0NCwtOTYwOTIzMDE1LDY2NjIxNzM3LC02
-ODk5NzgxMjQsNzQ0NzM0LC05MzY2OTY0MjYsLTY0NjQzMjc3OC
-wtMTk5MjkyOTk2MiwxNTkxODU0NDgwLDI1NDA5Mjg1NCwtMzQ4
-MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0OTU2XX0=
+eyJoaXN0b3J5IjpbODIxNDg2MjY5LDE3Nzg2NDkzMDUsMjA3ND
+k2MzgxLDE1MTg5NjQ5MzcsODMzNzQ5NDQsLTk2MDkyMzAxNSw2
+NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2Njk2NDI2LC
+02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQw
+OTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3ND
+k1Nl19
 -->
