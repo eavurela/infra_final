@@ -593,9 +593,14 @@ Para verificar que se haya instalado correctamente podemos utulizar el comando, 
 	root@web-server:~# docker ps 
 	CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 
+### 2. Instalación de Docker Composer
 
+Como usuario sudo descargamos el archivo y generamos el binario 
 
+	root@web-server:~# curl -SL https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
 
+Luego damos permisos de ejecución al binario y probamos su funcionamiento.
+	root@web-server:~# 
 
 ## Escalabilidad horizontal 
 
@@ -694,7 +699,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU0NjY1NTIwLC0xOTkyOTI5OTYyLDE1OT
-E4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3
-ODQsLTE4MzMzNzQ5NTZdfQ==
+eyJoaXN0b3J5IjpbMTM2MTQxMTMxMCwtMTk5MjkyOTk2MiwxNT
+kxODU0NDgwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2
+Nzg0LC0xODMzMzc0OTU2XX0=
 -->
