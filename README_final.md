@@ -549,7 +549,7 @@ En el reinicio, se debería ejecutar solo el montaje, y considerando que en la p
 
 ## Configuración de servidor docker 
 
-Consi
+Considerando que el servidor Docker, expondrá servicios web y se conectará al 
 
 
 ## Escalabilidad horizontal 
@@ -649,6 +649,6 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAxMjIwNTY3LC0zNDgxMTYzMDksLTE5Nz
+eyJoaXN0b3J5IjpbMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5Nz
 M2MzY3ODQsLTE4MzMzNzQ5NTZdfQ==
 -->
