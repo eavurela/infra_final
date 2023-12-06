@@ -330,9 +330,6 @@ Guardamos y salimos
 	Calling ioctl() to re-read partition table. 
 	Syncing disks.
 
-### 4.b  Creación de partición, versión acotada. 
-
-
 ### 5. Configuración del sistema de archivos 
 
 Verificamos el dispositivo sdc y la partición creada sdc1 
@@ -356,6 +353,12 @@ Creamos sistema de archivos ext4 para la partición sdc1
 		Writing inode tables: done 
 		Creating journal (8192 blocks): done 
 		Writing superblocks and filesystem accounting information: done
+
+### 4-5.b  Creación de partición, y Configuración de FS (versión acotada). 
+
+Para ahorrar pasos en el proceso, y evitar una shell interavtiva en la creación de particiones (agiliza el trabajo en scripts)
+
+
 
 ### 6. Montaje de la unidad 
 
@@ -637,6 +640,6 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzM2MzY3ODQsLTE4MzMzNzQ5NTZdfQ
-==
+eyJoaXN0b3J5IjpbLTY2NTQyNDg5OSwtMTk3MzYzNjc4NCwtMT
+gzMzM3NDk1Nl19
 -->
