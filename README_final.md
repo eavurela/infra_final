@@ -908,7 +908,8 @@ Llegado a este punto, el docker-compose.yml solo depende de.
 Por lo tanto, podemos cambiando esas únicas variables, levantar el mismo laboratorio con la ejecución de pocos comandos. 
 A ello! 
 
-En una virtual nueva ejecuto 
+En una virtual nueva ejecuto:
+
 
 
 
@@ -952,14 +953,20 @@ root@web-server-final:~/infra_final/script#docker-compose up -d
 	  ✔ 0341e0d720db Pull complete                                                                                                                                                    0.7s
 	  ✔ 3dc25df9202e Pull complete                                                                                                                                                    1.4s
 	  ✔ c02db9c48356 Pull complete                                                                                                                                                    1.6s
-   ✔ 0f187c37abb8 Pull complete                                                                                                                                                    1.7s
-[+] Building 0.0s (0/0)                                                                                                                                                  docker:default
-[+] Running 4/4
- ✔ Network script_infra_compose    Created                                                                                                                                         0.1s
- ✔ Container script-balan_compo-1  Started                                                                                                                                         0.5s
- ✔ Container script-web-app1-1     Started                                                                                                                                         0.0s
- ✔ Container script-web-app2-1     Started                                                                                                                                         0.0s
+	  ✔ 0f187c37abb8 Pull complete                                                                                                                                                    1.7s
+	  [+] Building 0.0s (0/0)                                                                                                                                                 
+	  docker:default
+	  [+] Running 4/4
+	  ✔ Network script_infra_compose    Created                                                                                                                                         0.1s
+	  ✔ Container script-balan_compo-1  Started                                                                                                                                         0.5s
+	  ✔ Container script-web-app1-1     Started                                                                                                                                         0.0s
+	  ✔ Container script-web-app2-1     Started                                                                                                                                         0.0s
 
+	root@web-server-final:~/infra_final/script# docker ps 
+	CONTAINER ID   IMAGE                          COMMAND                  CREATED         STATUS         PORTS                                     NAMES 
+	446342f5ffa1   nginx:stable-alpine3.17-slim   "/docker-entrypoint.…"   5 minutes ago   Up 5 minutes   80/tcp                                    script-web-app2-1 
+	deeab2e6ee2b   nginx:stable-alpine3.17-slim   "/docker-entrypoint.…"   5 minutes ago   Up 5 minutes   80/tcp                                    script-web-app1-1 
+	1d871fd0bf50   nginx:stable-alpine3.17-slim   "/docker-entrypoint.…"   5 minutes ago   Up 5 minutes   0.0.0.0:10000->80/tcp, :::10000->80/tcp   script-balan_compo-1
 
 	
 	
@@ -1064,11 +1071,11 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEyMTgzODEyLDE4MjQzNTY4MzQsLTE5Nj
-g1MDg5ODcsLTM3MjEyNDA2MywxNzc4NjQ5MzA1LDIwNzQ5NjM4
-MSwxNTE4OTY0OTM3LDgzMzc0OTQ0LC05NjA5MjMwMTUsNjY2Mj
-E3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNiwtNjQ2
-NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0MDkyOD
-U0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5NTZd
-fQ==
+eyJoaXN0b3J5IjpbLTMwMjM4NzQ4NywxODI0MzU2ODM0LC0xOT
+Y4NTA4OTg3LC0zNzIxMjQwNjMsMTc3ODY0OTMwNSwyMDc0OTYz
+ODEsMTUxODk2NDkzNyw4MzM3NDk0NCwtOTYwOTIzMDE1LDY2Nj
+IxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2OTY0MjYsLTY0
+NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0NDgwLDI1NDA5Mj
+g1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0OTU2
+XX0=
 -->
