@@ -756,7 +756,6 @@ Ahora para que aplique la configuración debemos reiniciar el contenedor.
 
 
 
-
 ## Escalabilidad horizontal 
 
 En el caso que dicha estructura necesite ser escalable de forma horizontal, se debería replicar el host identificado como **"Servidor Web"**. 
@@ -856,9 +855,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NDI3MTk4NiwtOTYwOTIzMDE1LDY2Nj
-IxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2OTY0MjYsLTY0
-NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0NDgwLDI1NDA5Mj
-g1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0OTU2
-XX0=
+eyJoaXN0b3J5IjpbODMzNzQ5NDQsLTk2MDkyMzAxNSw2NjYyMT
+czNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2Njk2NDI2LC02NDY0
+MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOTI4NT
+QsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1Nl19
+
 -->
