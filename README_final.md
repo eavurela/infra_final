@@ -793,10 +793,14 @@ Debe contener:
 https://hub.docker.com/_/nginx
 
  #### 4.2.2 Contenedor apache2
+ Ejecutar el comando:
 
 	docker run -it --name web-red-infra2 --ip 172.18.0.100 --network red_infra -v /share_volume/docker-web:/usr/local/apache2/htdocs/ -d httpd:2.4
-```
- 
+
+https://hub.docker.com/_/httpd
+
+
+
 
 ## Escalabilidad horizontal 
 
@@ -897,9 +901,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNTA4ODM5MSw4MzM3NDk0NCwtOTYwOT
-IzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2
-OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0ND
-gwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0x
-ODMzMzc0OTU2XX0=
+eyJoaXN0b3J5IjpbLTE0NjA0NDgwNjQsODMzNzQ5NDQsLTk2MD
+kyMzAxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2
+Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1ND
+Q4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwt
+MTgzMzM3NDk1Nl19
 -->
