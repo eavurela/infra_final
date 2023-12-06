@@ -721,9 +721,14 @@ Verificamos la creación de la imagen:
 
 Ejecutar el contenedor: 
 
-	docker run -d -p 6000:80 --name balanceador balanceo-nginx
+	docker run -d -p 8000:80 --name balanceador balanceo-nginx
 	ebd49374b88fe202965e524f085c88c244705df33ded2963a9c61a92288c4ff3
 	oot@web-server:/docker/red/balanceo# docker ps
+	CONTAINER ID   IMAGE            COMMAND                  CREATED         STATUS         PORTS                                   NAMES 
+	ebd49374b88f   balanceo-nginx   "/docker-entrypoint.…"   3 seconds ago   Up 2 seconds   0.0.0.0:8000->80/tcp, :::8000->80/tcp   balanceador
+
+#### 3.2.2 Copiar el archivo de configuración en el contenedor en el momento de ejecución del contenedor
+
 
 
 ## Escalabilidad horizontal 
@@ -825,8 +830,8 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MjcwMjYyNiwtNjg5OTc4MTI0LDc0ND
-czNCwtOTM2Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIs
-MTU5MTg1NDQ4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3Mz
-YzNjc4NCwtMTgzMzM3NDk1Nl19
+eyJoaXN0b3J5IjpbNjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3Mz
+QsLTkzNjY5NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1
+OTE4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2Mz
+Y3ODQsLTE4MzMzNzQ5NTZdfQ==
 -->
