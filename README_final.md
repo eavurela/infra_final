@@ -8,7 +8,7 @@ Edgardo Vurela
 Infraestructura de Servidores
 
 
-# Balanceo de carga web y almacenamiento centralizado
+# Balanceo de carga web y almacenamiento centralizado docker y github
 
 En el siguiente documento se encontrará la información necesaria para montar un sistema de alta disponibilidad web escalable horizontalmente. 
 La demostración se ejecutará en un ambiente local generado con Oracle VirtualBox, pero a nivel configuración es replicable a otros virtualizadores de infraestructura o servidores físicos. 
@@ -22,6 +22,7 @@ En la generación de este laboratorio se utilizará Ubuntu 20.04.6 LTS.
 Se utlizarán servicios de nginx como servidor proxy y servidor web, apache2 como servidor web, y el protocolo sshfs para compartir archivos entre instancias. 
 Se generará una primera plantilla con configuraciones básicas, que será luego replicada.
 Luego se utilizará docker y docker-compose para generar un balanceo web mediante la automatización de contenedores y repositorios.
+
 
  
 
@@ -1061,11 +1062,11 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY5MTQ4MDgwLDUwNDI2MDAwOCwxODgxNz
-k2ODQ1LC05OTk1NTk1NzYsMTgyNDM1NjgzNCwtMTk2ODUwODk4
-NywtMzcyMTI0MDYzLDE3Nzg2NDkzMDUsMjA3NDk2MzgxLDE1MT
-g5NjQ5MzcsODMzNzQ5NDQsLTk2MDkyMzAxNSw2NjYyMTczNywt
-Njg5OTc4MTI0LDc0NDczNCwtOTM2Njk2NDI2LC02NDY0MzI3Nz
-gsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOTI4NTRdfQ==
+eyJoaXN0b3J5IjpbMTAxOTY4NjEwMCwzNjkxNDgwODAsNTA0Mj
+YwMDA4LDE4ODE3OTY4NDUsLTk5OTU1OTU3NiwxODI0MzU2ODM0
+LC0xOTY4NTA4OTg3LC0zNzIxMjQwNjMsMTc3ODY0OTMwNSwyMD
+c0OTYzODEsMTUxODk2NDkzNyw4MzM3NDk0NCwtOTYwOTIzMDE1
+LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2OTY0Mj
+YsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0NDgwXX0=
 
 -->
