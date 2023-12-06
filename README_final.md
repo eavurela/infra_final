@@ -274,7 +274,7 @@ Con la siguiente sentencia se configura el nombre de host. Programa  < argumento
 
 	hostnamectl set-hostname sshfs-server
 
-### 4. Creación de partición
+### 4. Creación de partición, versión extendida. 
 
 Verificamos los dispositivos conectados. 
 
@@ -329,6 +329,8 @@ Guardamos y salimos
 	The partition table has been altered. 
 	Calling ioctl() to re-read partition table. 
 	Syncing disks.
+
+### 4.b  Creación de partición, versión 
 
 ### 5. Configuración del sistema de archivos 
 
@@ -634,5 +636,5 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzMzNzQ5NTZdfQ==
+eyJoaXN0b3J5IjpbLTM2MjY3MDgxMSwtMTgzMzM3NDk1Nl19
 -->
