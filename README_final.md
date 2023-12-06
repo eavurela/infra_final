@@ -662,7 +662,7 @@ En este punto tenemos por lo menos tres opciones para realizar.
 
 #### 3.2.1 Generar una imagen del contenedor con nuestro archivo de configuración. 
 
-Primero debemos generar le archivo de configuración de nginx. 
+Primero debemos generar le archivo de configuración de Nginx. 
 
 	root@web-server:/docker/red/balanceo# nano balanceo.conf
 	upstream backdocker { 
@@ -674,17 +674,15 @@ Primero debemos generar le archivo de configuración de nginx.
 			listen 80;
 			
 			server_name istea.laboratorio; 
-location / { 
+			location / { 
+				proxy_set_header Host $host ; 
+				proxy_set_header X-Real-Ip $remote_addr ; 
+				proxy_pass http://backdocker; 
+			} 
+	}
+Luego generaremos el Dockerfile, en dónde se detallan las instrucciones para la creación del a imagen. 
 
- proxy_set_header Host $host ; 
-
- proxy_set_header X-Real-Ip $remote_addr ; 
-
- proxy_pass http://backdocker; 
-
- } 
-
-}
+	root@web-server:/docker/red/balanceo# nano Dockerfile
 
 
 
@@ -789,7 +787,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTcxMjMyMzAsLTY4OTk3ODEyNCw3ND
+eyJoaXN0b3J5IjpbLTE3NDc2MTI3NzAsLTY4OTk3ODEyNCw3ND
 Q3MzQsLTkzNjY5NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYy
 LDE1OTE4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5Nz
 M2MzY3ODQsLTE4MzMzNzQ5NTZdfQ==
