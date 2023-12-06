@@ -794,7 +794,7 @@ https://hub.docker.com/_/nginx
 
  #### 4.2.2 Contenedor apache2
 
-	docker run -dit --name web-red-infra2 --ip 172.18.0.100 -v /share_volume/docker-web:/usr/local/apache2/htdocs/ httpd:2.4
+	docker run -it --name web-red-infra2 --ip 172.18.0.100 --network red_infra -v /share_volume/docker-web:/usr/local/apache2/htdocs/ -d httpd:2.4
 ```
  
 
@@ -897,9 +897,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU3MjgxMjg0LDgzMzc0OTQ0LC05NjA5Mj
-MwMTUsNjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5
-NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0OD
-AsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4
-MzMzNzQ5NTZdfQ==
+eyJoaXN0b3J5IjpbMTkyNTA4ODM5MSw4MzM3NDk0NCwtOTYwOT
+IzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2
+OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0ND
+gwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0x
+ODMzMzc0OTU2XX0=
 -->
