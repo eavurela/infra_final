@@ -632,15 +632,25 @@ Utilizaremos la red de bridge
 	root@web-server:~# docker network inspect bridge
 
 	[ 
+	 { 
 
- { 
-
- "Name": "bridge", 
-
- "Id": "44f20ce78e7fe83fe81260069e3ff45f5162b80d61372eb68f660a0579c4ae36", 
-
- "Created": "2023-12-06T05:57:29.231372773Z",
-
+	 "Name": "bridge", 
+	 "Id": "44f20ce78e7fe83fe81260069e3ff45f5162b80d61372eb68f660a0579c4ae36", 
+	 "Created": "2023-12-06T05:57:29.231372773Z",
+	 ...
+	        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "172.17.0.0/16",
+                    "Gateway": "172.17.0.1"
+                }
+            ]
+        },
+     ...
+     
+Como se puede observar, la red bridge es un /16 con dirección de ip 172.17.0.0 en dónde e
 
 
 ## Escalabilidad horizontal 
@@ -742,7 +752,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NDIxNjMzNCwtOTM2Njk2NDI2LC02ND
+eyJoaXN0b3J5IjpbMTcwNDI5Mzg5NiwtOTM2Njk2NDI2LC02ND
 Y0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOTI4
 NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1Nl
 19
