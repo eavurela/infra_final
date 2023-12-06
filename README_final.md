@@ -627,29 +627,11 @@ Debemos verificar la red que utilizaremos el rango de IP que entrega para poder 
 	1321da81e196   host      host      local 
 	4ba1b3e7c2e6   none      null      local
 
-Utilizaremos la red de bridge 
+Crearemos una nueva red para este laboratório. 
 
-	root@web-server:~# docker network inspect bridge
+	docker network create --subnet=172.18.0.0/16 red_infra
 
-	[ 
-	 { 
 
-	 "Name": "bridge", 
-	 "Id": "44f20ce78e7fe83fe81260069e3ff45f5162b80d61372eb68f660a0579c4ae36", 
-	 "Created": "2023-12-06T05:57:29.231372773Z",
-	 ...
-	        "IPAM": {
-            "Driver": "default",
-            "Options": null,
-            "Config": [
-                {
-                    "Subnet": "172.17.0.0/16",
-                    "Gateway": "172.17.0.1"
-                }
-            ]
-        },
-     ...
-     
 Como se puede observar, la red bridge es un /16 con dirección de ip 172.17.0.0 en dónde el gateway es 172.17.0.1
 Podemos entonces, generar contenedores con direcciones entre   172.17.0.2 - 172.17.255.254.
 
@@ -855,9 +837,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMzNzQ5NDQsLTk2MDkyMzAxNSw2NjYyMT
-czNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2Njk2NDI2LC02NDY0
-MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOTI4NT
-QsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1Nl19
-
+eyJoaXN0b3J5IjpbLTMyODc2ODE3NSw4MzM3NDk0NCwtOTYwOT
+IzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2
+OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0ND
+gwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0x
+ODMzMzc0OTU2XX0=
 -->
