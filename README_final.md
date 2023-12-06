@@ -888,7 +888,10 @@ Tomando de referencia:
 	        ports:
 	            - 10000:80
 
-**image**: Declara la imagen de docker-hub utilizada, en caso quiera usar una propia local deberí
+**image**: Declara la imagen de docker-hub utilizada, en caso quiera usar una propia local debería ser "build"
+**restart**: en caso el contenedor se apague se detalla que se reinicie de forma automática. 
+**networks**: se define la red a utilizar, se usa la red "infra_compose" declarada para su creación en "networks" 
+**configs**
 
 	
 	
@@ -993,10 +996,10 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTAwNDU0ODUsLTM3MjEyNDA2MywxNz
-c4NjQ5MzA1LDIwNzQ5NjM4MSwxNTE4OTY0OTM3LDgzMzc0OTQ0
-LC05NjA5MjMwMTUsNjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3Mz
-QsLTkzNjY5NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1
-OTE4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2Mz
-Y3ODQsLTE4MzMzNzQ5NTZdfQ==
+eyJoaXN0b3J5IjpbNDIwMjU2ODQ0LC0zNzIxMjQwNjMsMTc3OD
+Y0OTMwNSwyMDc0OTYzODEsMTUxODk2NDkzNyw4MzM3NDk0NCwt
+OTYwOTIzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC
+05MzY2OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkx
+ODU0NDgwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nz
+g0LC0xODMzMzc0OTU2XX0=
 -->
