@@ -552,8 +552,8 @@ En el reinicio, se debería ejecutar solo el montaje, y considerando que en la p
 Para la configuración del servidor docker se necesitará: 
  
 0. Configuracion del hostname, configuración de la red, instalación del servicio sshfs y configuración de la unidad para montaje automático. 
-1.  
-2. Instalación de Docker 
+1. Instalación de Docker 
+2. 
 3. 
 5. 
 6. 
@@ -582,7 +582,11 @@ Se configura la red, el servicio sshfs, el hostname y el montaje automático.
 	sshfs -o allow_other,default_permissions root@10.0.0.10:/opt/webserver  /share_volume 
 	echo "@reboot sleep 10 && sshfs root@10.0.0.10:/opt/webserver /share_volume" > /var/spool/cron/crontabs/root | chgrp crontab /var/spool/cron/crontabs/root
 
-### Instalación de 
+### 1. Instalación de Docker
+
+Para la instalación de Docker en ubuntu se debe ejecutar: 
+
+	
 
 
 
@@ -685,7 +689,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMTI3MjkwNywxNTkxODU0NDgwLDI1ND
-A5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0
-OTU2XX0=
+eyJoaXN0b3J5IjpbLTEwNTM3ODMxNDIsMTU5MTg1NDQ4MCwyNT
+QwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3
+NDk1Nl19
 -->
