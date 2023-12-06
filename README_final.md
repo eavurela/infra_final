@@ -794,6 +794,8 @@ https://hub.docker.com/_/nginx
 
  #### 4.2.2 Contenedor apache2
 
+	docker run -dit --name web-red-infra2 --ip 172.18.0.100 -v /share_volume/docker-web:/usr/local/apache2/htdocs/ httpd:2.4
+```
  
 
 ## Escalabilidad horizontal 
@@ -895,9 +897,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDU0ODY0MDEsODMzNzQ5NDQsLTk2MD
-kyMzAxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2
-Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1ND
-Q4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwt
-MTgzMzM3NDk1Nl19
+eyJoaXN0b3J5IjpbNjU3MjgxMjg0LDgzMzc0OTQ0LC05NjA5Mj
+MwMTUsNjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5
+NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0OD
+AsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4
+MzMzNzQ5NTZdfQ==
 -->
