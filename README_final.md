@@ -66,8 +66,19 @@ Para descargar los archivos que servirán de template en la configuración de re
 
 Se generará el directorio "infra_final" con los siguientes archivos: 
 
-	# ls infra_final/
-	proxy.conf  sshfs.conf  web.conf
+	#tree infra_final/
+
+	infra_final/
+	├── docker
+	│   └── balanceo.conf
+	├── README_final.md
+	├── red
+	│   ├── proxy.conf
+	│   ├── sshfs.conf
+	│   └── web.conf
+	└── script
+    ├── docker-compose.yml
+    └── web-inicial.sh
 
 En cada uno de los archivos, estará la configuración base, en caso exista más de un componente se deberá modificar la IP
 
@@ -1049,11 +1060,11 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5OTU1OTU3NiwxODI0MzU2ODM0LC0xOT
-Y4NTA4OTg3LC0zNzIxMjQwNjMsMTc3ODY0OTMwNSwyMDc0OTYz
-ODEsMTUxODk2NDkzNyw4MzM3NDk0NCwtOTYwOTIzMDE1LDY2Nj
-IxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2OTY0MjYsLTY0
-NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0NDgwLDI1NDA5Mj
-g1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0OTU2
-XX0=
+eyJoaXN0b3J5IjpbLTc4NjA4Mjg2MCwtOTk5NTU5NTc2LDE4Mj
+QzNTY4MzQsLTE5Njg1MDg5ODcsLTM3MjEyNDA2MywxNzc4NjQ5
+MzA1LDIwNzQ5NjM4MSwxNTE4OTY0OTM3LDgzMzc0OTQ0LC05Nj
+A5MjMwMTUsNjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkz
+NjY5NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NT
+Q0ODAsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODRd
+fQ==
 -->
