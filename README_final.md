@@ -619,6 +619,13 @@ Con se vio anteriormente debemos dentro del archivo de configuración de nginx, 
 
 #### 3.1 Verificar detalles de la red de docker 
 
+Debemos verificar la red que utilizaremos el rango de IP que entrega para poder configurar la ip de l
+
+	root@web-server:~# docker network ls 
+	NETWORK ID     NAME      DRIVER    SCOPE 
+	44f20ce78e7f   bridge    bridge    local 
+	1321da81e196   host      host      local 
+	4ba1b3e7c2e6   none      null      local
 
 
 
@@ -723,7 +730,8 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNjY5NjQyNiwtNjQ2NDMyNzc4LC0xOT
-kyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMTYz
-MDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5NTZdfQ==
+eyJoaXN0b3J5IjpbOTgxNTU2OTY3LC05MzY2OTY0MjYsLTY0Nj
+QzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0NDgwLDI1NDA5Mjg1
+NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0OTU2XX
+0=
 -->
