@@ -557,7 +557,9 @@ Para la configuración del servidor docker se necesitará:
 3. Configuración de balanceo
 	3.1 Configurar detalles de la red de docker 
 	3.2 Creación del contenedor balanceador. 
-			 3.2.1 Generar una imagen del contenedor con nuestro archivo de configuración. 
+		-	3.2.1 Generar una imagen del contenedor con nuestro archivo de configuración. 
+				3.2.2 Montar un directorio local en la configuración de nginx, para que tome de forma dinámica los cambios. 
+		-	
 	
 4. 
 5. 
@@ -860,7 +862,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTU2NjMyNjEsODMzNzQ5NDQsLTk2MD
+eyJoaXN0b3J5IjpbLTE5MjIyMzAxODcsODMzNzQ5NDQsLTk2MD
 kyMzAxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2
 Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1ND
 Q4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwt
