@@ -813,6 +813,11 @@ Para la configuración mediante el compose se necesita:
 
 ### 5.1 Generar el archivo docker-compose.yml
 
+El siguiente archivo de configuración ha sido generado, con las mismas características del anterior proyecto, siguiendo la documentación:
+https://anderfernandez.com/blog/tutorial-docker-compose/#Networks-en-Docker-Compose
+https://sysadm.es/docker-container-misma-red/
+
+
 	version: '3'
 
 	services:
@@ -854,11 +859,11 @@ Para la configuración mediante el compose se necesita:
 
 		networks:
 		  infra_compose:
-	    driver: bridge
+		    driver: bridge
 
-	configs:
-	  nginx_conf:
-	    file: /docker/red/balanceo/balanceo2.conf
+		configs:
+		  nginx_conf:
+		    file: /docker/red/balanceo/balanceo2.conf
 
 
 ## Escalabilidad horizontal 
@@ -960,7 +965,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NDg2OTc5MCwtMzcyMTI0MDYzLDE3Nz
+eyJoaXN0b3J5IjpbMTU1MzgxMTcyMSwtMzcyMTI0MDYzLDE3Nz
 g2NDkzMDUsMjA3NDk2MzgxLDE1MTg5NjQ5MzcsODMzNzQ5NDQs
 LTk2MDkyMzAxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNC
 wtOTM2Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5
