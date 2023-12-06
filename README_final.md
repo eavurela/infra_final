@@ -980,6 +980,8 @@ Finalmente ejecuto el compose
 	  ✔ Container script-web-app1-1     Started                                                                                                                                         0.0s
 	  ✔ Container script-web-app2-1     Started                                                                                                                                         0.0s
 
+Como se puede ver el nombre del contenedor, se genera con el directorio-nombre_del_servicio.
+
 	root@web-server-final:~/infra_final/script# docker ps 
 	CONTAINER ID   IMAGE                          COMMAND                  CREATED         STATUS         PORTS                                     NAMES 
 	446342f5ffa1   nginx:stable-alpine3.17-slim   "/docker-entrypoint.…"   5 minutes ago   Up 5 minutes   80/tcp                                    script-web-app2-1 
@@ -1054,46 +1056,18 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 
-## Diagramas de red y arquitectura
 
-
-```mermaid
-sequenceDiagram
-```
-Diagrama de red:
-
-```mermaid
-graph LR
-A((Nube)) ----> B((192.168.0.100 / 10.0.0.100))
-B --> C(Web1 10.0.0.20)
-B --> D(Web2 10.0.0.21)
-C --> E(Almacen 10.0.0.10)
-D --> E(Almacen 10.0.0.10)
-
-
-
-
-```
-Diagrama de arquitectura:
-
-```mermaid
-graph LR
-A((Nube)) ----> B((Servidor Proxy))
-B --> C(Servidor Web 1)
-B --> D(Servidor Web 2)
-C --> E(Servidor Almacenamiento)
-D --> E(Servidor Almacenamiento)
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NTM3Nzg4NSwxODI0MzU2ODM0LC0xOT
-Y4NTA4OTg3LC0zNzIxMjQwNjMsMTc3ODY0OTMwNSwyMDc0OTYz
-ODEsMTUxODk2NDkzNyw4MzM3NDk0NCwtOTYwOTIzMDE1LDY2Nj
-IxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2OTY0MjYsLTY0
-NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0NDgwLDI1NDA5Mj
-g1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0OTU2
-XX0=
+eyJoaXN0b3J5IjpbMjYwNDMzNzA3LDE4MjQzNTY4MzQsLTE5Nj
+g1MDg5ODcsLTM3MjEyNDA2MywxNzc4NjQ5MzA1LDIwNzQ5NjM4
+MSwxNTE4OTY0OTM3LDgzMzc0OTQ0LC05NjA5MjMwMTUsNjY2Mj
+E3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNiwtNjQ2
+NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0MDkyOD
+U0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5NTZd
+fQ==
 -->
