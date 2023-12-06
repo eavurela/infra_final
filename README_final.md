@@ -544,7 +544,7 @@ En el editor que se abre, agregar una línea:
 	..
 En el reinicio, se debería ejecutar solo el montaje, y considerando que en la plantilla se han agregado las llaves, debe conectarse solo.
 
-## Configuración de servidor docker 
+## Configuración de servidor Docker 
 
 Para la configuración del servidor docker se necesitará: 
  
@@ -573,7 +573,7 @@ Se configura la red, el servicio sshfs, el hostname y el montaje automático.
 	hostnamectl set-hostname web-server 
 	# Configuracion de red 
 	cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yamlBK 
-	cp /infra_final/web.conf /etc/netplan/00-installer-config.yaml 
+	cp /infra_final/red/web.conf /etc/netplan/00-installer-config.yaml 
 	# Aplicar cambios de configuracion 
 	netplan apply 
 	# Actualización de paquetes e instalación de sshfs 
@@ -1060,11 +1060,11 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzQzNjE4NDUsLTk5OTU1OTU3NiwxOD
-I0MzU2ODM0LC0xOTY4NTA4OTg3LC0zNzIxMjQwNjMsMTc3ODY0
-OTMwNSwyMDc0OTYzODEsMTUxODk2NDkzNyw4MzM3NDk0NCwtOT
-YwOTIzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05
-MzY2OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxOD
-U0NDgwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0
-XX0=
+eyJoaXN0b3J5IjpbMTg4MTc5Njg0NSwtOTk5NTU5NTc2LDE4Mj
+QzNTY4MzQsLTE5Njg1MDg5ODcsLTM3MjEyNDA2MywxNzc4NjQ5
+MzA1LDIwNzQ5NjM4MSwxNTE4OTY0OTM3LDgzMzc0OTQ0LC05Nj
+A5MjMwMTUsNjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkz
+NjY5NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NT
+Q0ODAsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODRd
+fQ==
 -->
