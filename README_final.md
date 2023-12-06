@@ -549,7 +549,9 @@ En el reinicio, se debería ejecutar solo el montaje, y considerando que en la p
 
 ## Configuración de servidor docker 
 
-Considerando que el servidor Docker, expondrá servicios web y se conectará al 
+Considerando que el servidor Docker, expondrá servicios web y se conectará al almacenamiento compartido, parte de las configuraciones serán similares. 
+
+
 
 
 ## Escalabilidad horizontal 
@@ -649,6 +651,6 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5Nz
-M2MzY3ODQsLTE4MzMzNzQ5NTZdfQ==
+eyJoaXN0b3J5IjpbMTU5MTg1NDQ4MCwyNTQwOTI4NTQsLTM0OD
+ExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1Nl19
 -->
