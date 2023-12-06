@@ -743,7 +743,15 @@ En este caso ejecutaremos el contenedor, con la imagen nginx:alpine utilizando u
 #### 3.2.3 Copiar el archivo de configuración con el contenedor en ejecución
 Activo un nginx:alpine con la configuración de nginx por defecto. 
 
-docker run -d -p 4000:80 --name balanceador nginx:alpine
+	docker run -d -p 4000:80 --name balanceador-copy nginx:alpine
+
+	docker cp balanceo.conf balanceador-copy:/etc/nginx/conf.d/ 
+	Successfully copied 2.05kB to balanceador-copy:/etc/nginx/conf.d/
+Ahora para que aplique la configuración debemos reiniciar el contenedor.
+
+	docker restart balanceador-copy
+
+
 
 
 
@@ -848,9 +856,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTE5Nzg0OTcsLTk2MDkyMzAxNSw2Nj
-YyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2Njk2NDI2LC02
-NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOT
-I4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1
-Nl19
+eyJoaXN0b3J5IjpbLTY1NDI3MTk4NiwtOTYwOTIzMDE1LDY2Nj
+IxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2OTY0MjYsLTY0
+NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0NDgwLDI1NDA5Mj
+g1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0OTU2
+XX0=
 -->
