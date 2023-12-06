@@ -724,7 +724,8 @@ Ejecutar el contenedor:
 	docker run <ejecuta el contenedor>
 		   -d  <como daemon, no captura la terminal>
 		   -p  <mapeo de puertos puerto_anfitrion:puerto_contenedor>
-		   --name <nombre del contenedor>
+		   --name <nombre del contenedor (opcional)>
+		   nombre de la imagen
 
 	docker run -d -p 8000:80 --name balanceador balanceo-nginx
 	ebd49374b88fe202965e524f085c88c244705df33ded2963a9c61a92288c4ff3
@@ -734,7 +735,10 @@ Ejecutar el contenedor:
 
 #### 3.2.2 Montar un directorio local en la configuración de nginx, para que tome de forma dinámica los cambios. 
 En este caso ejecutaremos el contenedor, con la imagen nginx:alpine utilizando un "bind mount". Se montará un directorio del host anfitrión en el contenedor. 
-docker run -d -p 8000:80 --name balanceador balanceo-nginx
+
+	docker -v <volumen >
+	
+	docker run -d -p 8000:80 --name balanceador -v  balanceo-nginx
 
 
 
@@ -838,7 +842,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTI3MDQ2Niw2NjYyMTczNywtNjg5OT
+eyJoaXN0b3J5IjpbLTU0MjYwODI5MCw2NjYyMTczNywtNjg5OT
 c4MTI0LDc0NDczNCwtOTM2Njk2NDI2LC02NDY0MzI3NzgsLTE5
 OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOTI4NTQsLTM0ODExNj
 MwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1Nl19
