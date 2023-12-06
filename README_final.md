@@ -551,6 +551,32 @@ En el reinicio, se debería ejecutar solo el montaje, y considerando que en la p
 
 Considerando que el servidor Docker, expondrá servicios web y se conectará al almacenamiento compartido, parte de las configuraciones serán similares. 
 
+Se configura la red, el servicio sshfs, el hostname y el montaje automático. 
+
+	/infra_final# cat web-inicial.sh 
+	#!/bin/bash 
+	# Configuración de hostname 
+	hostnamectl set-hostname web-server 
+	# Configuracion de red 
+	cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yamlBK 
+	cp /infra_final/web.conf /etc/netplan/00-installer-config.yaml 
+# Aplicar cambios de configuracion 
+
+netplan apply 
+
+# Actualización de paquetes e instalación de sshfs 
+
+apt update -y && apt install -y sshfs 
+
+# Creación de directorio de montaje 
+
+mkdir -p /share_volume 
+
+#Conexión al sshfs 
+
+sshfs -o allow_other,default_permissions root@10.0.0.10:/opt/webserver  /share_volume 
+
+echo "@reboot sleep 10 && sshfs root@10.0.0.10:/opt/webserver /share_volume" > /var/spool/cron/crontabs/root | chgrp crontab /var/spool/cron/crontabs/root
 
 
 
@@ -652,7 +678,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NzYzNTU1MCwxNTkxODU0NDgwLDI1ND
-A5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0
-OTU2XX0=
+eyJoaXN0b3J5IjpbODcwMjMwNjI5LDE1OTE4NTQ0ODAsMjU0MD
+kyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5
+NTZdfQ==
 -->
