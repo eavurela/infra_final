@@ -549,7 +549,68 @@ En el reinicio, se debería ejecutar solo el montaje, y considerando que en la p
 
 ## Configuración de servidor docker 
 
+Para la configuración del servidor docker se necesitará: 
+ 
+0. Configuracion del hostname, configuración de la red, instalación del servicio sshfs y configuración de la unidad para montaje automático. 
+1. Instalación de Docker 
+2. 
+3. 
+5. 
+6. 
+
+### 0. Configuraciones heredadas. 
+
 Considerando que el servidor Docker, expondrá servicios web y se conectará al almacenamiento compartido, parte de las configuraciones serán similares. 
+
+Se configura la red, el servicio sshfs, el hostname y el montaje automático. 
+
+	servidor_clone/infra_final# bash web-inicial.sh 
+	
+	#!/bin/bash 
+	# Configuración de hostname 
+	hostnamectl set-hostname web-server 
+	# Configuracion de red 
+	cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yamlBK 
+	cp /infra_final/web.conf /etc/netplan/00-installer-config.yaml 
+	# Aplicar cambios de configuracion 
+	netplan apply 
+	# Actualización de paquetes e instalación de sshfs 
+	apt update -y && apt install -y sshfs 
+	# Creación de directorio de montaje 
+	mkdir -p /share_volume 
+	#Conexión al sshfs 
+	sshfs -o allow_other,default_permissions root@10.0.0.10:/opt/webserver  /share_volume 
+	echo "@reboot sleep 10 && sshfs root@10.0.0.10:/opt/webserver /share_volume" > /var/spool/cron/crontabs/root | chgrp crontab /var/spool/cron/crontabs/root
+
+### 1. Instalación de Docker
+
+Para la instalación de Docker en ubuntu se debe ejecutar: 
+
+	root@web-server:~# apt install docker docker.io -y
+
+Para verificar que se haya instalado correctamente podemos utulizar el comando, nos listará los procesos de Docker corriendo en este caso ninguno. 
+
+	root@web-server:~# docker ps 
+	CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+### 2. Instalación de Docker Composer
+
+Como usuario sudo descargamos el archivo y generamos el binario 
+
+	root@web-server:~# curl -SL https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-linux-x86_64 -o /usr/bin/docker-compose 
+
+	 % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current 
+	 Dload  Upload   Total   Spent    Left  Speed 
+	 0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 
+	 100 56.8M  100 56.8M    0     0  10.8M      0  0:00:05  0:00:05 --:--:-- 13.4M
+
+Luego damos permisos de ejecución al binario y probamos su funcionamiento
+
+	root@web-server:~# chmod +x /usr/bin/docker-compose
+
+Probar el funcionamiento
+
+	root@web-server:~# docker-compose version
 
 
 
@@ -651,6 +712,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MTg1NDQ4MCwyNTQwOTI4NTQsLTM0OD
-ExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1Nl19
+eyJoaXN0b3J5IjpbLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNT
+kxODU0NDgwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2
+Nzg0LC0xODMzMzc0OTU2XX0=
 -->
