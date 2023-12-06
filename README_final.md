@@ -812,9 +812,8 @@ Toda la configuración anterior de docker, puede ser generada en un solo archivo
 Para la configuración mediante el compose se necesita: 
 
  1. Generar archivo docker-compose.yml
- 2. Dentro del archivo configurar los servicios 
- 3. Configuración automática, ejecutar el yml.
- 4. Luego verificar el funcionamiento. 
+ 2. Configuración automática, ejecutar el yml.
+ 3. Luego verificar el funcionamiento. 
 
 ### 5.1 Generar el archivo docker-compose.yml
 
@@ -912,7 +911,7 @@ Llegado a este punto, el docker-compose.yml solo depende de.
 Por lo tanto, podemos cambiando esas únicas variables, levantar el mismo laboratorio con la ejecución de pocos comandos. 
 A ello! 
 
-### 3.1 Configuración automática del laboratorio. 
+### 5.2 Configuración automática del laboratorio. 
 En una copia de la virtual de template ejecuto:
 
 	#git clone git@github.com:eavurela/infra_final.git
@@ -924,7 +923,7 @@ Luego ejecuto el script de instalación web y docker.
 
 ( referencia: https://github.com/eavurela/infra_final/blob/master/script/web-inicial.sh )
 
-Luego ejecuto el compose 
+Luego ejecuto el compose: 
 
 	root@web-server-final:~# cd infra_final/script/
 	root@web-server-final:~/infra_final/script#docker-compose up -d
@@ -976,7 +975,7 @@ Luego ejecuto el compose
 	  ✔ Container script-web-app1-1     Started                                                                                                                                         0.0s
 	  ✔ Container script-web-app2-1     Started                                                                                                                                         0.0s
 
-### 4.1
+### 5.3 Verificar los contenedores ejecutándose.
 Como se puede ver el nombre del contenedor, se genera con el directorio-nombre_del_servicio.
 
 	root@web-server-final:~/infra_final/script# docker ps 
@@ -1060,11 +1059,11 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NTA2MTAzMSw1MDQyNjAwMDgsMTg4MT
-c5Njg0NSwtOTk5NTU5NTc2LDE4MjQzNTY4MzQsLTE5Njg1MDg5
-ODcsLTM3MjEyNDA2MywxNzc4NjQ5MzA1LDIwNzQ5NjM4MSwxNT
-E4OTY0OTM3LDgzMzc0OTQ0LC05NjA5MjMwMTUsNjY2MjE3Mzcs
-LTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNiwtNjQ2NDMyNz
-c4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0MDkyODU0XX0=
+eyJoaXN0b3J5IjpbOTQyMjg2MDI3LDUwNDI2MDAwOCwxODgxNz
+k2ODQ1LC05OTk1NTk1NzYsMTgyNDM1NjgzNCwtMTk2ODUwODk4
+NywtMzcyMTI0MDYzLDE3Nzg2NDkzMDUsMjA3NDk2MzgxLDE1MT
+g5NjQ5MzcsODMzNzQ5NDQsLTk2MDkyMzAxNSw2NjYyMTczNywt
+Njg5OTc4MTI0LDc0NDczNCwtOTM2Njk2NDI2LC02NDY0MzI3Nz
+gsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOTI4NTRdfQ==
 
 -->
