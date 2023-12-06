@@ -875,8 +875,7 @@ https://docs.docker.com/compose/compose-file/compose-file-v3/ | Docker Configs
 
 Detalle del archivo de configuración: 
 	
-	version: '3' | Usa la versión 3 de docker compose
-	
+**version**: '3'   Usa la versión 3 de docker compose
 **services**: Aqui dentro se deben especificar los contenedores a levantar 
 **networks**: Aqui se detallará la creación de redes y el tipo de red, en este caso nombre infra_compose de tipo bridge
 **configs**: En caso quiera enviar un archivo de configuración, lo determino acá nginx_conf es la variable y file: "ruta_al_archivo_host".
@@ -1060,11 +1059,11 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MTc5Njg0NSwtOTk5NTU5NTc2LDE4Mj
-QzNTY4MzQsLTE5Njg1MDg5ODcsLTM3MjEyNDA2MywxNzc4NjQ5
-MzA1LDIwNzQ5NjM4MSwxNTE4OTY0OTM3LDgzMzc0OTQ0LC05Nj
-A5MjMwMTUsNjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkz
-NjY5NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NT
-Q0ODAsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODRd
+eyJoaXN0b3J5IjpbLTE5NDExMDI5NDEsMTg4MTc5Njg0NSwtOT
+k5NTU5NTc2LDE4MjQzNTY4MzQsLTE5Njg1MDg5ODcsLTM3MjEy
+NDA2MywxNzc4NjQ5MzA1LDIwNzQ5NjM4MSwxNTE4OTY0OTM3LD
+gzMzc0OTQ0LC05NjA5MjMwMTUsNjY2MjE3MzcsLTY4OTk3ODEy
+NCw3NDQ3MzQsLTkzNjY5NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOT
+I5OTYyLDE1OTE4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMTYzMDld
 fQ==
 -->
