@@ -926,19 +926,12 @@ Luego ejecuto el script de instalación web y docker.
 
 Luego modifico docker_compose con la ruta del archivo de config nueva. 
 
-	sed -i 's/docker/red/balanceo/balanceo2.conf/root/infra_final/docker/balanceo.conf/g'  infra_final/script/docker-compose.yml
+	root@web-server-final:~# sed -i 's/docker/red/balanceo/balanceo2.conf/root/infra_final/docker/balanceo.conf/g'  infra_final/script/docker-compose.yml
 
 Finalmente ejecuto el compose 
 
-	cd infra_final/script/
-	docker-compose up -d
-
-
-
-
-
-
-root@web-server-final:~/infra_final/script#docker-compose up -d
+	root@web-server-final:~# cd infra_final/script/
+	root@web-server-final:~/infra_final/script#docker-compose up -d
 
 	[+] Running 3/9
 	⠴ web-app1 Pulling                                                                                                                                                                                                                    	 5.5s 	
@@ -1096,11 +1089,11 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM4ODI0NTU4LDE4MjQzNTY4MzQsLTE5Nj
-g1MDg5ODcsLTM3MjEyNDA2MywxNzc4NjQ5MzA1LDIwNzQ5NjM4
-MSwxNTE4OTY0OTM3LDgzMzc0OTQ0LC05NjA5MjMwMTUsNjY2Mj
-E3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNiwtNjQ2
-NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0MDkyOD
-U0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5NTZd
-fQ==
+eyJoaXN0b3J5IjpbLTY1NTM3Nzg4NSwxODI0MzU2ODM0LC0xOT
+Y4NTA4OTg3LC0zNzIxMjQwNjMsMTc3ODY0OTMwNSwyMDc0OTYz
+ODEsMTUxODk2NDkzNyw4MzM3NDk0NCwtOTYwOTIzMDE1LDY2Nj
+IxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2OTY0MjYsLTY0
+NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0NDgwLDI1NDA5Mj
+g1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0OTU2
+XX0=
 -->
