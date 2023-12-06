@@ -800,6 +800,8 @@ https://hub.docker.com/_/httpd
 
 **Consideraciones**: No tiene ningún sentido tener dos servicios web diferentes, dado que duplicamos el tamaño de almacenamiento en imágenes de docker. 
 
+## Utilización de Docker compose
+
 
 
 
@@ -903,9 +905,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NDk2MzgxLDE1MTg5NjQ5MzcsODMzNz
-Q5NDQsLTk2MDkyMzAxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0
-NDczNCwtOTM2Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5Nj
-IsMTU5MTg1NDQ4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3
-MzYzNjc4NCwtMTgzMzM3NDk1Nl19
+eyJoaXN0b3J5IjpbMTc3ODY0OTMwNSwyMDc0OTYzODEsMTUxOD
+k2NDkzNyw4MzM3NDk0NCwtOTYwOTIzMDE1LDY2NjIxNzM3LC02
+ODk5NzgxMjQsNzQ0NzM0LC05MzY2OTY0MjYsLTY0NjQzMjc3OC
+wtMTk5MjkyOTk2MiwxNTkxODU0NDgwLDI1NDA5Mjg1NCwtMzQ4
+MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0OTU2XX0=
 -->
