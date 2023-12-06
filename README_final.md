@@ -619,7 +619,7 @@ Con se vio anteriormente debemos dentro del archivo de configuración de nginx, 
 
 #### 3.1 Verificar detalles de la red de docker 
 
-Debemos verificar la red que utilizaremos el rango de IP que entrega para poder configurar la ip de l
+Debemos verificar la red que utilizaremos el rango de IP que entrega para poder configurar la ip de los nuevos contenedores en función de dicha dirección de red. 
 
 	root@web-server:~# docker network ls 
 	NETWORK ID     NAME      DRIVER    SCOPE 
@@ -627,7 +627,19 @@ Debemos verificar la red que utilizaremos el rango de IP que entrega para poder 
 	1321da81e196   host      host      local 
 	4ba1b3e7c2e6   none      null      local
 
+Utilizaremos la red de bridge 
 
+	root@web-server:~# docker network inspect bridge
+
+	[ 
+
+ { 
+
+ "Name": "bridge", 
+
+ "Id": "44f20ce78e7fe83fe81260069e3ff45f5162b80d61372eb68f660a0579c4ae36", 
+
+ "Created": "2023-12-06T05:57:29.231372773Z",
 
 
 
@@ -730,8 +742,8 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgxNTU2OTY3LC05MzY2OTY0MjYsLTY0Nj
-QzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0NDgwLDI1NDA5Mjg1
-NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0OTU2XX
-0=
+eyJoaXN0b3J5IjpbMTE5NDIxNjMzNCwtOTM2Njk2NDI2LC02ND
+Y0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOTI4
+NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1Nl
+19
 -->
