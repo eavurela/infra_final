@@ -597,7 +597,12 @@ Para verificar que se haya instalado correctamente podemos utulizar el comando, 
 
 Como usuario sudo descargamos el archivo y generamos el binario 
 
-	root@web-server:~# curl -SL https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-linux-x86_64 -o /usr/bin/docker-compose
+	root@web-server:~# curl -SL https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-linux-x86_64 -o /usr/bin/docker-compose 
+
+	 % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current 
+	 Dload  Upload   Total   Spent    Left  Speed 
+	 0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 
+	 100 56.8M  100 56.8M    0     0  10.8M      0  0:00:05  0:00:05 --:--:-- 13.4M
 
 Luego damos permisos de ejecución al binario y probamos su funcionamiento
 
@@ -606,6 +611,8 @@ Luego damos permisos de ejecución al binario y probamos su funcionamiento
 Probar el funcionamiento
 
 	root@web-server:~# docker-compose version
+
+
 
 
 ## Escalabilidad horizontal 
@@ -705,7 +712,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMzQwNjM4NywtMTk5MjkyOTk2MiwxNT
+eyJoaXN0b3J5IjpbLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNT
 kxODU0NDgwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2
 Nzg0LC0xODMzMzc0OTU2XX0=
 -->
