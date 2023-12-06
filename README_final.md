@@ -617,20 +617,17 @@ Probar el funcionamiento
 Para la configuración del balanceo dentro de docker, necesitaremos un contenedor Nginx para balancear y contenedores que oficien de servidor web. 
 Con se vio anteriormente debemos dentro del archivo de configuración de nginx, detallar las IPs o hostnames a dónde direccionaremos el tráfico, por lo tanto son datos que debemos averiguar o generar. 
 
-#### 3.1 Verificar detalles de la red de docker 
+#### 3.1 Configurar detalles de la red de docker 
 
-Debemos verificar la red que utilizaremos el rango de IP que entrega para poder configurar la ip de los nuevos contenedores en función de dicha dirección de red. 
+Podemos configurar la red y luego utilizar la red creada para generar 
 
 	root@web-server:~# docker network ls 
 	NETWORK ID     NAME      DRIVER    SCOPE 
 	44f20ce78e7f   bridge    bridge    local 
 	1321da81e196   host      host      local 
 	4ba1b3e7c2e6   none      null      local
-
-Crearemos una nueva red para este laboratório. 
-
-	docker network create --subnet=172.18.0.0/16 red_infra
-
+	34b4c1670d1a   red_infra   bridge    local
+	
 
 Como se puede observar, la red bridge es un /16 con dirección de ip 172.17.0.0 en dónde el gateway es 172.17.0.1
 Podemos entonces, generar contenedores con direcciones entre   172.17.0.2 - 172.17.255.254.
@@ -837,7 +834,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyODc2ODE3NSw4MzM3NDk0NCwtOTYwOT
+eyJoaXN0b3J5IjpbMTMzMzA2NTEyMCw4MzM3NDk0NCwtOTYwOT
 IzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2
 OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0ND
 gwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0x
