@@ -926,7 +926,12 @@ Luego ejecuto el script de instalación web y docker.
 
 Luego modifico docker_compose con la ruta del archivo de config nueva. 
 
-sed -i 's//root/infra_final/docker/balanceo.conf/g'
+	sed -i 's/docker/red/balanceo/balanceo2.conf/root/infra_final/docker/balanceo.conf/g'  infra_final/script/docker-compose.yml
+
+Finalmente ejecuto el compose 
+
+	cd infra_final/script/
+	docker-compose up -d
 
 
 
@@ -1091,7 +1096,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ5NjAxNzQyLDE4MjQzNTY4MzQsLTE5Nj
+eyJoaXN0b3J5IjpbNjM4ODI0NTU4LDE4MjQzNTY4MzQsLTE5Nj
 g1MDg5ODcsLTM3MjEyNDA2MywxNzc4NjQ5MzA1LDIwNzQ5NjM4
 MSwxNTE4OTY0OTM3LDgzMzc0OTQ0LC05NjA5MjMwMTUsNjY2Mj
 E3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNiwtNjQ2
