@@ -758,7 +758,8 @@ Ahora para que aplique la configuración debemos reiniciar el contenedor.
 	
 ### 4. Configuración de contenedor web-server
 
-
+Considerando que el directorio de la aplicación web, estará en el volumen compartido por el servidor de almacenamiento. 
+Debemos mapear el volumen que ya tenemos instalado, al 
 
 
 
@@ -864,7 +865,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNjk2NDEyMyw4MzM3NDk0NCwtOTYwOT
+eyJoaXN0b3J5IjpbLTMyOTExMTU2Miw4MzM3NDk0NCwtOTYwOT
 IzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2
 OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0ND
 gwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0x
