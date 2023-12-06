@@ -614,7 +614,10 @@ Probar el funcionamiento
 
 ### 3. Configuración de balanceo
 
-Para la configuración del balanceo dentro de docker, necesitaremos 
+Para la configuración del balanceo dentro de docker, necesitaremos un contenedor Nginx para balancear y contenedores que oficien de servidor web. 
+Con se vio anteriormente debemos dentro del archivo de configuración de nginx, detallar las IPs o hostnames a dónde direccionaremos el tráfico, por lo tanto son datos que debemos averiguar o generar. 
+
+#### 3.1 
 
 
 
@@ -718,7 +721,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY1OTc1OTg0LC02NDY0MzI3NzgsLTE5OT
+eyJoaXN0b3J5IjpbNzI0MTY0MzE5LC02NDY0MzI3NzgsLTE5OT
 I5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOTI4NTQsLTM0ODExNjMw
 OSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1Nl19
 -->
