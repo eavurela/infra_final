@@ -721,7 +721,10 @@ Verificamos la creación de la imagen:
 
 Ejecutar el contenedor: 
 
-		asd
+	docker run <ejecuta el contenedor>
+		   -d  <como daemon, no captura la terminal>
+		   -p  <mapeo de puertos puerto_anfitrion:puerto_contenedor>
+		   --name <nombre del contenedor>
 
 	docker run -d -p 8000:80 --name balanceador balanceo-nginx
 	ebd49374b88fe202965e524f085c88c244705df33ded2963a9c61a92288c4ff3
@@ -835,8 +838,8 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjM0MDkzNzYsNjY2MjE3MzcsLTY4OT
-k3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNiwtNjQ2NDMyNzc4LC0x
-OTkyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMT
-YzMDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5NTZdfQ==
+eyJoaXN0b3J5IjpbLTE3MTI3MDQ2Niw2NjYyMTczNywtNjg5OT
+c4MTI0LDc0NDczNCwtOTM2Njk2NDI2LC02NDY0MzI3NzgsLTE5
+OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOTI4NTQsLTM0ODExNj
+MwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1Nl19
 -->
