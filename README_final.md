@@ -547,6 +547,10 @@ En el editor que se abre, agregar una línea:
 	..
 En el reinicio, se debería ejecutar solo el montaje, y considerando que en la plantilla se han agregado las llaves, debe conectarse solo.
 
+## Configuración de servidor docker 
+
+Consi
+
 
 ## Escalabilidad horizontal 
 
@@ -645,6 +649,6 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMT
-gzMzM3NDk1Nl19
+eyJoaXN0b3J5IjpbODAxMjIwNTY3LC0zNDgxMTYzMDksLTE5Nz
+M2MzY3ODQsLTE4MzMzNzQ5NTZdfQ==
 -->
