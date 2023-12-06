@@ -361,8 +361,8 @@ Para ahorrar pasos en el proceso, y evitar una shell interavtiva en la creación
 	# apt update && apt install xfsprogs -y
 Formateo.
 
-	# mkfs.xfs /dev/sdb
-Con estos dos simples comandos, se puede generar lo mismo que en los pasos 4 y 5. 
+	# mkfs.xfs /dev/sdc
+Con estos dos simples comandos, se puede generar algo análogo a los  pasos 4 y 5. 
 
 
 ### 6. Montaje de la unidad 
@@ -645,6 +645,6 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNDgxNjIxMSwtMTk3MzYzNjc4NCwtMT
+eyJoaXN0b3J5IjpbLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMT
 gzMzM3NDk1Nl19
 -->
