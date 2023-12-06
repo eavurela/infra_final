@@ -759,12 +759,11 @@ Ahora para que aplique la configuración debemos reiniciar el contenedor.
 ### 4. Configuración de contenedor web-server
 
 Considerando que el directorio de la aplicación web, estará en el volumen compartido por el servidor de almacenamiento. 
-Debemos mapear el volumen que ya tenemos instalado, al 
+Debemos mapear el volumen que ya tenemos instalado, a los contenedores que ejecuten el servicio web. 
+Entonces: 
 
-
-
-
-
+ 1. Verificar volumen montado
+ 2. Ejecutar contenedor nginx con IPs balanceadas por el contenedor de balanceo, considerando que el "DocumentRoot" debe corresponder a un "bind mount" del volu
 
 ## Escalabilidad horizontal 
 
@@ -865,7 +864,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyOTExMTU2Miw4MzM3NDk0NCwtOTYwOT
+eyJoaXN0b3J5IjpbMTMwNTkzNjI3MCw4MzM3NDk0NCwtOTYwOT
 IzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2
 OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0ND
 gwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0x
