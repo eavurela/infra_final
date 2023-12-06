@@ -669,21 +669,20 @@ En este punto tenemos por lo menos tres opciones para realizar.
 
 Primero debemos generar le archivo de configuración de Nginx. 
 
-	root@web-server:/docker/red/balanceo# nano balanceo.conf
-	upstream backdocker { 
-	   server 172.18.0.100; 
-	   server 172.18.0.110; 
-	   # <ip_contenedor_web> 
-	} 
+	upstream backend { 
+		 server 172.18.0.100; 
+		 server 172.18.0.110; 
+		 } 
+
 	server { 
-			listen 80;
-			
-			server_name istea.laboratorio; 
-			location / { 
-				proxy_set_header Host $host ; 
-				proxy_set_header X-Real-Ip $remote_addr ; 
-				proxy_pass http://backdocker; 
+			 listen 80; 
+			 server_name istea.laboratorio; 
+			 location / { 
+					proxy_set_header Host $host ; 
+					proxy_set_header X-Real-Ip $remote_addr ; 
+					proxy_pass http://backend; 
 			} 
+
 	}
 Luego generaremos el Dockerfile, en dónde se detallan las instrucciones para la creación del a imagen. 
 
@@ -904,9 +903,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxODk2NDkzNyw4MzM3NDk0NCwtOTYwOT
-IzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2
-OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0ND
-gwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0x
-ODMzMzc0OTU2XX0=
+eyJoaXN0b3J5IjpbLTE0NDYzNTMyMTksMTUxODk2NDkzNyw4Mz
+M3NDk0NCwtOTYwOTIzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQs
+NzQ0NzM0LC05MzY2OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOT
+k2MiwxNTkxODU0NDgwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0x
+OTczNjM2Nzg0LC0xODMzMzc0OTU2XX0=
 -->
