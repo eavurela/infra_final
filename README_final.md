@@ -799,6 +799,9 @@ https://hub.docker.com/_/nginx
 
 https://hub.docker.com/_/httpd
 
+Consideraciones: No tiene ningún sentido tener dos servicios web diferentes, dado que duplicamos el tamaño de almacenamiento en imágenes de docker. 
+
+
 
 
 
@@ -901,9 +904,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjA0NDgwNjQsODMzNzQ5NDQsLTk2MD
-kyMzAxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2
-Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1ND
-Q4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwt
-MTgzMzM3NDk1Nl19
+eyJoaXN0b3J5IjpbMTUxODk2NDkzNyw4MzM3NDk0NCwtOTYwOT
+IzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2
+OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0ND
+gwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0x
+ODMzMzc0OTU2XX0=
 -->
