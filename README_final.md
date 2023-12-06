@@ -932,25 +932,26 @@ root@web-server-final:~/infra_final/script#docker-compose up -d
 	  ✔ a23d11eaa182 Pull complete                                                                                                                                                        1.0s 
 	  ✔ 0341e0d720db Download complete                                                                                                                                                    0.7s 
 	  ✔ 3dc25df9202e Download complete                                                                                                                                                    1.4s 
-	  ⠴ c02db9c48356 Waiting                                                                                                                                                              1tmpfs                           96M  4,0K   96M   1% /run/user/0
-root@10.0.0.10:/opt/webserver  3,9G   88K  3,7G   1% /share_volume
-root@web-server-final:~/infra_final/script# ls
-docker-compose.yml  web-inicial.sh
-root@web-server-final:~/infra_final/script# docker-compose up -d
-[+] Running 5/9
- ⠧ web-app1 Pulling                                                                                                                                                                                                                    5.7s 
- ⠦ web-app2 Pulling                                                                                                                                                                                                                    5.7s 
- ⠦ balan_compo 6 layers [⣿⣿⣿⣿⣿⠀]      0B/0B      Pulling                                                                                                                                                                               5.7s 
-   ✔ 1207c741d8c9 Pull complete                                                                                                                                                                                                        1.0s 
-[+] Running 9/982 Pull complete
- ✔ web-app1 Pulled                                                                                                                                                                 5.8s
- ✔ web-app2 Pulled                                                                                                                                                                 5.8s
- ✔ balan_compo 6 layers [⣿⣿⣿⣿⣿⣿]      0B/0B      Pulled                                                                                                                            5.8s
-   ✔ 1207c741d8c9 Pull complete                                                                                                                                                    1.0s
-   ✔ a23d11eaa182 Pull complete                                                                                                                                                    1.0s
-   ✔ 0341e0d720db Pull complete                                                                                                                                                    0.7s
-   ✔ 3dc25df9202e Pull complete                                                                                                                                                    1.4s
-   ✔ c02db9c48356 Pull complete                                                                                                                                                    1.6s
+	  ⠴ c02db9c48356 Waiting                                                                                                                                                             	
+	  1tmpfs                           96M  4,0K   96M   1% /run/user/0	
+	  root@10.0.0.10:/opt/webserver  3,9G   88K  3,7G   1% /share_volume
+	  root@web-server-final:~/infra_final/script# ls
+	  docker-compose.yml  web-inicial.sh
+	  root@web-server-final:~/infra_final/script# docker-compose up -d
+	  [+] Running 5/9
+	  ⠧ web-app1 Pulling                                                                                                                                                                                                                    5.7s 
+	  ⠦ web-app2 Pulling                                                                                                                                                                                                                    5.7s 
+	  ⠦ balan_compo 6 layers [⣿⣿⣿⣿⣿⠀]      0B/0B      Pulling                                                                                                                                                                               5.7s 
+	  ✔ 1207c741d8c9 Pull complete                                                                                                                                                                                                        1.0s 
+	  [+] Running 9/982 Pull complete
+	  ✔ web-app1 Pulled                                                                                                                                                                 5.8s
+	  ✔ web-app2 Pulled                                                                                                                                                                 5.8s
+	  ✔ balan_compo 6 layers [⣿⣿⣿⣿⣿⣿]      0B/0B      Pulled                                                                                                                            5.8s
+	  ✔ 1207c741d8c9 Pull complete                                                                                                                                                    1.0s
+	  ✔ a23d11eaa182 Pull complete                                                                                                                                                    1.0s
+	  ✔ 0341e0d720db Pull complete                                                                                                                                                    0.7s
+	  ✔ 3dc25df9202e Pull complete                                                                                                                                                    1.4s
+	  ✔ c02db9c48356 Pull complete                                                                                                                                                    1.6s
    ✔ 0f187c37abb8 Pull complete                                                                                                                                                    1.7s
 [+] Building 0.0s (0/0)                                                                                                                                                  docker:default
 [+] Running 4/4
@@ -1063,11 +1064,11 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTMxNTk4NiwxODI0MzU2ODM0LC0xOT
-Y4NTA4OTg3LC0zNzIxMjQwNjMsMTc3ODY0OTMwNSwyMDc0OTYz
-ODEsMTUxODk2NDkzNyw4MzM3NDk0NCwtOTYwOTIzMDE1LDY2Nj
-IxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2OTY0MjYsLTY0
-NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0NDgwLDI1NDA5Mj
-g1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0OTU2
-XX0=
+eyJoaXN0b3J5IjpbMzEyMTgzODEyLDE4MjQzNTY4MzQsLTE5Nj
+g1MDg5ODcsLTM3MjEyNDA2MywxNzc4NjQ5MzA1LDIwNzQ5NjM4
+MSwxNTE4OTY0OTM3LDgzMzc0OTQ0LC05NjA5MjMwMTUsNjY2Mj
+E3MzcsLTY4OTk3ODEyNCw3NDQ3MzQsLTkzNjY5NjQyNiwtNjQ2
+NDMyNzc4LC0xOTkyOTI5OTYyLDE1OTE4NTQ0ODAsMjU0MDkyOD
+U0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5NTZd
+fQ==
 -->
