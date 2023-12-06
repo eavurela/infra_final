@@ -553,30 +553,25 @@ Considerando que el servidor Docker, expondrá servicios web y se conectará al 
 
 Se configura la red, el servicio sshfs, el hostname y el montaje automático. 
 
-	/infra_final# cat web-inicial.sh 
+	servidor_clone/infra_final# bash web-inicial.sh 
+	
 	#!/bin/bash 
 	# Configuración de hostname 
 	hostnamectl set-hostname web-server 
 	# Configuracion de red 
 	cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yamlBK 
 	cp /infra_final/web.conf /etc/netplan/00-installer-config.yaml 
-# Aplicar cambios de configuracion 
+	# Aplicar cambios de configuracion 
+	netplan apply 
+	# Actualización de paquetes e instalación de sshfs 
+	apt update -y && apt install -y sshfs 
+	# Creación de directorio de montaje 
+	mkdir -p /share_volume 
+	#Conexión al sshfs 
+	sshfs -o allow_other,default_permissions root@10.0.0.10:/opt/webserver  /share_volume 
+	echo "@reboot sleep 10 && sshfs root@10.0.0.10:/opt/webserver /share_volume" > /var/spool/cron/crontabs/root | chgrp crontab /var/spool/cron/crontabs/root
 
-netplan apply 
 
-# Actualización de paquetes e instalación de sshfs 
-
-apt update -y && apt install -y sshfs 
-
-# Creación de directorio de montaje 
-
-mkdir -p /share_volume 
-
-#Conexión al sshfs 
-
-sshfs -o allow_other,default_permissions root@10.0.0.10:/opt/webserver  /share_volume 
-
-echo "@reboot sleep 10 && sshfs root@10.0.0.10:/opt/webserver /share_volume" > /var/spool/cron/crontabs/root | chgrp crontab /var/spool/cron/crontabs/root
 
 
 
@@ -678,7 +673,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcwMjMwNjI5LDE1OTE4NTQ0ODAsMjU0MD
-kyODU0LC0zNDgxMTYzMDksLTE5NzM2MzY3ODQsLTE4MzMzNzQ5
-NTZdfQ==
+eyJoaXN0b3J5IjpbLTE1OTM4MTkzMTUsMTU5MTg1NDQ4MCwyNT
+QwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3
+NDk1Nl19
 -->
