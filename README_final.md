@@ -651,7 +651,9 @@ Utilizaremos la red de bridge
      ...
      
 Como se puede observar, la red bridge es un /16 con dirección de ip 172.17.0.0 en dónde el gateway es 172.17.0.1
-Podemos entonces, generar contenedores con direcciones entre 172.17.0.2 y 
+Podemos entonces, generar contenedores con direcciones entre   172.17.0.2 - 172.17.255.254.
+
+
 
 
 
@@ -754,8 +756,7 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMTAxODAwMywtOTM2Njk2NDI2LC02ND
-Y0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1NDQ4MCwyNTQwOTI4
-NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwtMTgzMzM3NDk1Nl
-19
+eyJoaXN0b3J5IjpbNzQ0NzM0LC05MzY2OTY0MjYsLTY0NjQzMj
+c3OCwtMTk5MjkyOTk2MiwxNTkxODU0NDgwLDI1NDA5Mjg1NCwt
+MzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0xODMzMzc0OTU2XX0=
 -->
