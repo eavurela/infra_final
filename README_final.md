@@ -871,11 +871,25 @@ Detalle del archivo de configuración:
 	
 	version: '3' | Usa la versión 3 de docker compose
 	
-**services*: Aqui dentro se deben especificar los contenedores a levantar 
+**services**: Aqui dentro se deben especificar los contenedores a levantar 
+**networks**: Aqui se detallará la creación de redes y el tipo de red, en este caso nombre infra_compose de tipo bridge
+**configs**: En caso quiera enviar un archivo de configuración, lo determino acá nginx_conf es la variable y file: "ruta_al_archivo_host".
 
-networks: Aqui se detallará la creación de redes y el tipo de red, en este caso nombre infra_compose de tipo bridge
+Tomando de referencia: 
 
-configs: En caso quiera enviar un archivo de configuración, lo determino acá nginx_conf es la variable y file: "ruta_al_archivo_host".
+	    balan_compo:
+	        image: 'nginx:stable-alpine3.17-slim'
+	        restart: always
+	        networks:
+	            - infra_compose
+	        configs:
+	            - source: nginx_conf
+	              target: /etc/nginx/conf.d/balanceo.conf
+	        ports:
+	            - 10000:80
+
+**image**: Declara la imagen de docker-hub utilizada, en caso quiera usar una propia local deberí
+
 	
 	
 	
@@ -979,10 +993,10 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwOTIyMDgxNiwtMzcyMTI0MDYzLDE3Nz
-g2NDkzMDUsMjA3NDk2MzgxLDE1MTg5NjQ5MzcsODMzNzQ5NDQs
-LTk2MDkyMzAxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNC
-wtOTM2Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5
-MTg1NDQ4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNj
-c4NCwtMTgzMzM3NDk1Nl19
+eyJoaXN0b3J5IjpbLTExMTAwNDU0ODUsLTM3MjEyNDA2MywxNz
+c4NjQ5MzA1LDIwNzQ5NjM4MSwxNTE4OTY0OTM3LDgzMzc0OTQ0
+LC05NjA5MjMwMTUsNjY2MjE3MzcsLTY4OTk3ODEyNCw3NDQ3Mz
+QsLTkzNjY5NjQyNiwtNjQ2NDMyNzc4LC0xOTkyOTI5OTYyLDE1
+OTE4NTQ0ODAsMjU0MDkyODU0LC0zNDgxMTYzMDksLTE5NzM2Mz
+Y3ODQsLTE4MzMzNzQ5NTZdfQ==
 -->
