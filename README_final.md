@@ -777,8 +777,11 @@ Entonces:
 	root@10.0.0.10:/opt/webserver  3,9G   88K  3,7G   1% /share_volume 
 	overlay                        9,8G  5,5G  3,9G  59%/var/lib/docker/overlay2/f47c7584a63304ffb26718f1b503bb3b5a3ff30d660dcc203a44cee86c44e126/merged 
 	..
+#### 4.2 Ejecutar contenedor. 
+Debe contener: 
+	
 
-
+ 1. IP dentro del rango 172.18.0.2 - 172..
 
 ## Escalabilidad horizontal 
 
@@ -879,9 +882,9 @@ D --> E(Servidor Almacenamiento)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODY5MDgyMjgsODMzNzQ5NDQsLTk2MD
-kyMzAxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNCwtOTM2
-Njk2NDI2LC02NDY0MzI3NzgsLTE5OTI5Mjk5NjIsMTU5MTg1ND
-Q4MCwyNTQwOTI4NTQsLTM0ODExNjMwOSwtMTk3MzYzNjc4NCwt
-MTgzMzM3NDk1Nl19
+eyJoaXN0b3J5IjpbMjA3Njg5MDcwOCw4MzM3NDk0NCwtOTYwOT
+IzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0LC05MzY2
+OTY0MjYsLTY0NjQzMjc3OCwtMTk5MjkyOTk2MiwxNTkxODU0ND
+gwLDI1NDA5Mjg1NCwtMzQ4MTE2MzA5LC0xOTczNjM2Nzg0LC0x
+ODMzMzc0OTU2XX0=
 -->
