@@ -576,7 +576,7 @@ Considerando que el servidor Docker, expondrá servicios web y se conectará al 
 
 Se configura la red, el servicio sshfs, el hostname y el montaje automático. 
 
-	servidor_clone/infra_final# bash web-inicial.sh 
+	servidor_clone/infra_final/script/# bash web-inicial.sh 
 	
 	#!/bin/bash 
 	# Configuración de hostname 
@@ -594,11 +594,11 @@ Se configura la red, el servicio sshfs, el hostname y el montaje automático.
 	sshfs -o allow_other,default_permissions root@10.0.0.10:/opt/webserver  /share_volume 
 	echo "@reboot sleep 10 && sshfs root@10.0.0.10:/opt/webserver /share_volume" > /var/spool/cron/crontabs/root | chgrp crontab /var/spool/cron/crontabs/root
 
-Agregado al script posterior. 
+Agregado al script posterior ( para automatización ). 
 
-		# instalación de docker # 
+		# instalación de docker 
 		apt install docker docker.io -y 
-		# Instalacion de copose# 
+		# Instalacion de copose 
 		curl -SL https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-linux-x86_64 -o /usr/bin/docker-compose 
 		chmod +x /usr/bin/docker-compose
 
@@ -1069,11 +1069,11 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMjkwNjI5OCwxMjg4NTk4Njc0LDE0NT
-Y3MjM0OTYsLTMzNzQ3MTYzNCwtMTk0MDI1Mzk0OCwxMjc5ODA1
-OTMyLDM2OTE0ODA4MCw1MDQyNjAwMDgsMTg4MTc5Njg0NSwtOT
-k5NTU5NTc2LDE4MjQzNTY4MzQsLTE5Njg1MDg5ODcsLTM3MjEy
-NDA2MywxNzc4NjQ5MzA1LDIwNzQ5NjM4MSwxNTE4OTY0OTM3LD
-gzMzc0OTQ0LC05NjA5MjMwMTUsNjY2MjE3MzcsLTY4OTk3ODEy
-NF19
+eyJoaXN0b3J5IjpbLTE0MjcyMzkzNzgsLTkyMjkwNjI5OCwxMj
+g4NTk4Njc0LDE0NTY3MjM0OTYsLTMzNzQ3MTYzNCwtMTk0MDI1
+Mzk0OCwxMjc5ODA1OTMyLDM2OTE0ODA4MCw1MDQyNjAwMDgsMT
+g4MTc5Njg0NSwtOTk5NTU5NTc2LDE4MjQzNTY4MzQsLTE5Njg1
+MDg5ODcsLTM3MjEyNDA2MywxNzc4NjQ5MzA1LDIwNzQ5NjM4MS
+wxNTE4OTY0OTM3LDgzMzc0OTQ0LC05NjA5MjMwMTUsNjY2MjE3
+MzddfQ==
 -->
