@@ -47,7 +47,7 @@ Luego se utilizará docker y docker-compose para generar un balanceo web mediant
 			
 		** Instancia Docker 
 			
-			- Adaptador de red 1 
+			- Adaptador de red 1 : Adaptador NAT
 		
 
 
@@ -87,8 +87,8 @@ Se generará el directorio "infra_final" con los siguientes archivos:
 	│   ├── sshfs.conf
 	│   └── web.conf
 	└── script
-    ├── docker-compose.yml
-    └── web-inicial.sh
+	    ├── docker-compose.yml
+	    └── web-inicial.sh
 
 En cada uno de los archivos, estará la configuración base, en caso exista más de un componente se deberá modificar la IP
 
@@ -1069,11 +1069,11 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzc3MTQ3OTUsMTQ1NjcyMzQ5NiwtMz
-M3NDcxNjM0LC0xOTQwMjUzOTQ4LDEyNzk4MDU5MzIsMzY5MTQ4
-MDgwLDUwNDI2MDAwOCwxODgxNzk2ODQ1LC05OTk1NTk1NzYsMT
-gyNDM1NjgzNCwtMTk2ODUwODk4NywtMzcyMTI0MDYzLDE3Nzg2
-NDkzMDUsMjA3NDk2MzgxLDE1MTg5NjQ5MzcsODMzNzQ5NDQsLT
-k2MDkyMzAxNSw2NjYyMTczNywtNjg5OTc4MTI0LDc0NDczNF19
+eyJoaXN0b3J5IjpbMTI4ODU5ODY3NCwxNDU2NzIzNDk2LC0zMz
+c0NzE2MzQsLTE5NDAyNTM5NDgsMTI3OTgwNTkzMiwzNjkxNDgw
+ODAsNTA0MjYwMDA4LDE4ODE3OTY4NDUsLTk5OTU1OTU3NiwxOD
+I0MzU2ODM0LC0xOTY4NTA4OTg3LC0zNzIxMjQwNjMsMTc3ODY0
+OTMwNSwyMDc0OTYzODEsMTUxODk2NDkzNyw4MzM3NDk0NCwtOT
+YwOTIzMDE1LDY2NjIxNzM3LC02ODk5NzgxMjQsNzQ0NzM0XX0=
 
 -->
