@@ -24,7 +24,7 @@ Se generará una primera plantilla con configuraciones básicas, que será luego
 Luego se utilizará docker y docker-compose para generar un balanceo web mediante la automatización de contenedores y repositorios.
 
  
-![enter image description here](https://i.postimg.cc/pr6MdwVz/rams-net.png)
+![enter image description here](https://i.postimg.cc/PrSQCtkB/Opera-Instant-nea-2023-12-08-123601-app-diagrams-net.png)
  
  
 
@@ -44,6 +44,11 @@ Luego se utilizará docker y docker-compose para generar un balanceo web mediant
 		** Instancia Almacen**
 		
 			- Adaptador de red 1: Adaptador NAT
+			
+		** Instancia Docker 
+			
+			- Adaptador de red 1 
+		
 
 
 ## Configuración de plantilla 
@@ -1064,7 +1069,7 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjQ4MjY3MjAsMTQ1NjcyMzQ5NiwtMz
+eyJoaXN0b3J5IjpbLTEwMzc3MTQ3OTUsMTQ1NjcyMzQ5NiwtMz
 M3NDcxNjM0LC0xOTQwMjUzOTQ4LDEyNzk4MDU5MzIsMzY5MTQ4
 MDgwLDUwNDI2MDAwOCwxODgxNzk2ODQ1LC05OTk1NTk1NzYsMT
 gyNDM1NjgzNCwtMTk2ODUwODk4NywtMzcyMTI0MDYzLDE3Nzg2
