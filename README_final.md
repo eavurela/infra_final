@@ -874,13 +874,13 @@ https://docs.docker.com/compose/compose-file/compose-file-v3/ | Docker Configs
 	            - 80
 
 
-		networks:
-		  infra_compose:
-		    driver: bridge
+	networks:
+		infra_compose:
+		  driver: bridge
 
-		configs:
-		  nginx_conf:
-		    file: /docker/red/balanceo/balanceo2.conf
+	configs:
+		nginx_conf:
+		  file: /docker/red/balanceo/balanceo2.conf
 
 Detalle del archivo de configuración: 
 	
@@ -1069,5 +1069,5 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NjU4Nzk4OF19
+eyJoaXN0b3J5IjpbLTg0MjI5NTgyOF19
 -->
