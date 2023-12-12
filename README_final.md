@@ -906,12 +906,19 @@ Tomando de referencia:
 	            - 10000:80
 
 **image**: Declara la imagen de docker-hub utilizada, en caso quiera usar una propia local debería ser "build"
+
 **restart**: en caso el contenedor se apague se detalla que se reinicie de forma automática. 
+
 **networks**: se define la red a utilizar, se usa la red "infra_compose" declarada para su creación en "networks" 
+
 **configs**: se declara un origen, en este caso el archivo del anfitirón que se busca para la configuración, y un target o destino, que es el archivo que debe generar en el contenedor. 
+
 **ports**: mapeo de puertos entre anfitrión y contenedor, se configura <puerto_anfitrion>:<puerto_contenedor>
+
 **expose**: utilizado en los web-servers declara que se exponga el puerto 80, puerto de escucha de Nginx. pero no necesita ser mapeado externamente, dado que será consultado por el balanceador.  
+
 **volumes**: bind mount mediante docker compose, se mapea un directorio del anfitrion a un directorio del contenedor. 
+
 En este caso se hace coincidir el volumen del sshfs con el directoryroot por defecto de nginx. 
 
 **Consideraciones**: 
@@ -1072,5 +1079,5 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzEzNDI1MzAsLTg0MjI5NTgyOF19
+eyJoaXN0b3J5IjpbLTIwMTczNTk4NTZdfQ==
 -->
