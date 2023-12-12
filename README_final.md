@@ -885,8 +885,11 @@ https://docs.docker.com/compose/compose-file/compose-file-v3/ | Docker Configs
 Detalle del archivo de configuración: 
 	
 **version**: '3'   Usa la versión 3 de docker compose
+
 **services**: Aqui dentro se deben especificar los contenedores a levantar 
+
 **networks**: Aqui se detallará la creación de redes y el tipo de red, en este caso nombre infra_compose de tipo bridge
+
 **configs**: En caso quiera enviar un archivo de configuración, lo determino acá nginx_conf es la variable y file: "ruta_al_archivo_host".
 
 Tomando de referencia: 
@@ -1069,5 +1072,5 @@ DockerNgix     https://hub.docker.com/_/nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MjI5NTgyOF19
+eyJoaXN0b3J5IjpbLTE1MzEzNDI1MzAsLTg0MjI5NTgyOF19
 -->
