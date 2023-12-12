@@ -8,7 +8,7 @@ Edgardo Vurela
 Infraestructura de Servidores
 
 
-# Balanceo de carga web y almacenamiento centralizado docker y github
+# Balanceo de carga web y almacenamiento centralizado. Docker y Github
 
 En el siguiente documento se encontrará la información necesaria para montar un sistema de alta disponibilidad web escalable horizontalmente. 
 La demostración se ejecutará en un ambiente local generado con Oracle VirtualBox, pero a nivel configuración es replicable a otros virtualizadores de infraestructura o servidores físicos. 
@@ -164,7 +164,7 @@ Necesitaremos instalar el software que utilizaremos para redireccionar el tráfi
 	root@servidor-proxy:/# apt update -y && apt install -y nginx 
 
 Una vez instalado, necesitaremos configurar un VirtualHost que será el encargado de la redirección. 
-En la siguiente configuración se puede ver que las consultas al puerto 80 http serán redirecciónadas a http://backend, configurado como la lista de las ips detalladas en upstream backend. En este caso, el servidor web corre en la ip "10.0.0.20", luego el servidor Docker con el balanceo de cargas interno corre en el host 10.0.0.21, escuchando el servicio en el puerto 8000. 
+En la siguiente configuración se puede ver que las consultas al puerto 80 http serán redirecciónadas a http://backend, configurado como la lista de las ips detalladas en upstream backend. En este caso, el servidor web corre en la ip "10.0.0.20", luego el servidor Docker con el balanceo de cargas interno corre en el host 10.0.0.21, escuchando el servicio en el puerto 10000. 
 
 		root@servidor-proxy:/# nano /etc/nginx/sites-available/balanceo
 		
@@ -608,7 +608,7 @@ Para la instalación de Docker en ubuntu se debe ejecutar:
 
 	root@web-server:~# apt install docker docker.io -y
 
-Para verificar que se haya instalado correctamente podemos utulizar el comando, nos listará los procesos de Docker corriendo en este caso ninguno. 
+Para verificar que se haya instalado correctamente podemos utulizar el comando "docker ps", nos listará los procesos de Docker corriendo en este caso ninguno. 
 
 	root@web-server:~# docker ps 
 	CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
